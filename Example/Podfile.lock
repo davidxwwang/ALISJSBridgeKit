@@ -1,0 +1,22 @@
+PODS:
+  - ALISJSBridgeKit (0.1.0)
+  - APOpenSSL (1.0.0)
+  - NebulaSDK (1.6.0.20170803)
+
+DEPENDENCIES:
+  - ALISJSBridgeKit (from `../`)
+  - APOpenSSL
+  - NebulaSDK
+
+EXTERNAL SOURCES:
+  ALISJSBridgeKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ALISJSBridgeKit: 947a01de7127a85f1235f9b1af0bdbd44d51f22e
+  APOpenSSL: 0db1fa185e046356375045238aa5b01aedbc4f36
+  NebulaSDK: cf9f9d68df1f93b209b1b6fe3ea2f6a9b1f56fff
+
+PODFILE CHECKSUM: a3a2fe3e38fb1f0f733354a5e518c7d8124650d7
+
+COCOAPODS: 1.3.1

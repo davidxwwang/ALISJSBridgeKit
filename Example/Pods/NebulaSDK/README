@@ -1,0 +1,9 @@
+Nebula for iOS
+添加系统库：
+ImageIO.framework
+CoreTelephony.framework
+WebKit.framework
+libc++.tbd
+libz.tbd
+libbz2.tbd
+SystemConfiguration.framework

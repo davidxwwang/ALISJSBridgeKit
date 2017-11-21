@@ -1,0 +1,1 @@
+../../../../../ALISJSBridgeKit/Classes/ALISBridgePluginProtocol.h

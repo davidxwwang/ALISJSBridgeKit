@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ALISJSBridgeKit/Classes/**/*'
   
+  
   # s.resource_bundles = {
   #   'ALISJSBridgeKit' => ['ALISJSBridgeKit/Assets/*.png']
   # }

@@ -1,14 +1,21 @@
-use_frameworks!
+#use_frameworks!
+
+source 'http://gitlab.alibaba-inc.com/NebulaSDK/Specs.git'
+platform :ios, '9.0'
 
 target 'ALISJSBridgeKit_Example' do
   pod 'ALISJSBridgeKit', :path => '../'
 
+  pod 'NebulaSDK'
+  pod 'APOpenSSL'
+  
   target 'ALISJSBridgeKit_Tests' do
     inherit! :search_paths
 
-    pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
+# pod 'Specta'
+#  pod 'Expecta'
+#  pod 'FBSnapshotTestCase'
+#  pod 'Expecta+Snapshots'
   end
 end
+

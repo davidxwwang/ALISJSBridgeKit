@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E2E5CF7E164CC24F1ADB985797DB90 /* ALISBridgePluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9721A4B987D73EE292FEAFBD599D91A8 /* ALISBridgePluginProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2459B5F43C9E83D9C50EAC7051A9EBE2 /* ALISJSBridgeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F8839FB4AEC073E6C0F8D269CE876 /* ALISJSBridgeKit-dummy.m */; };
+		2495455911331CD3E91117D018DA6A17 /* README in Sources */ = {isa = PBXBuildFile; fileRef = F13067C1EFB1633705F9F98811289CA7 /* README */; };
+		4BF3E5FB8EFE9791340814CEC5D09E7B /* ALSJSBridgeModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A537BA11F597F364F97089B2FD3F3D1 /* ALSJSBridgeModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		563EF72FA180353D0FDE5B02ED731852 /* Pods-ALISJSBridgeKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B982EF482F91D7EE7EFB18964EF2ED84 /* Pods-ALISJSBridgeKit_Example-dummy.m */; };
+		625BA233BE49A053946A5B3DA8228A2D /* ALSJSBridgeModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B0FC1ACC350A7B25B349CD94428FC /* ALSJSBridgeModuleManager.m */; };
+		674F34A55A6F8A1E1AF0E658B34BA62F /* ALSJSDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = DB40021F24EC26BD48084CDF79DB2822 /* ALSJSDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6922F498BE9B3C018313A6B29FCE1CEE /* Pods-ALISJSBridgeKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 357071FAE78CF16BEAAE6B697CA9DBCA /* Pods-ALISJSBridgeKit_Tests-dummy.m */; };
+		75E751E5FFCF44E8B2C3C01DB68CE010 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7769DB0645B51F6303115D82932CC94C /* ALSJSBridgeModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7FC1F9C946BAA182F5849289BA9439 /* ALSJSBridgeModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEF91FEA23875E57C26B78B5AB89FDA /* ALSJSBridgeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9EFB593A7F0310C3837850E41CA8E9 /* ALSJSBridgeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DD5289546250B3D33730AFE6F5223FB /* APOpenSSL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D6D685ACF3B872360E6987779757C /* APOpenSSL-dummy.m */; };
+		B96F99D3A75A61F2B7E64341AF40AE8F /* ALISJSBridgeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 39102DBA74F2A85D9D12FF9DFE3B3A64 /* ALISJSBridgeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C26FBE42EB1C82636591DCA7766FD50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C342219DB9728503827E7D3A7DED1277 /* NebulaSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFED13296344AEFCFC2729C8E2C7B6 /* NebulaSDK-dummy.m */; };
+		C8DCFD5AAD93F7B66016620DFFF4CF11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D6CF5EA8AED462B85D143C0CE4CA9CFB /* README in Sources */ = {isa = PBXBuildFile; fileRef = 140C00E19F00DDF601ED8F83BB180FCB /* README */; };
+		D777CB5DCF68B6417136F1E13D5B014F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E0B30B9F5FA91C9D0E023041E968988C /* ALSJSBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 59526BE539F1DA91980AE72C0E19A99B /* ALSJSBridgeModule.m */; };
+		EBA981D21CFA303D5ECEE84EF4C1B0F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2281C8D8F2E364EF96A021179A1A5A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE4B724CD14638E04C1DFFB37FA4807;
+			remoteInfo = NebulaSDK;
+		};
+		E2DB77F1DC7DC15871203BB98F90C405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E28FAC0E2E6D988CCFD488FB5DF34B0;
+			remoteInfo = APOpenSSL;
+		};
+		F39794FBEB1C692FA371CBAECCC196D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 120A59672E495F056C97CC0A93F789A0;
+			remoteInfo = ALISJSBridgeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E0652762ABDF42564A64A76AC7C70D /* NebulaAppManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NebulaAppManager.bundle; path = NebulaSDK.framework/NebulaAppManager.bundle; sourceTree = "<group>"; };
+		0E5CB2A4FFFE1224763CA31572D28932 /* APOpenSSL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APOpenSSL.xcconfig; sourceTree = "<group>"; };
+		0F7FC1F9C946BAA182F5849289BA9439 /* ALSJSBridgeModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSBridgeModuleProtocol.h; sourceTree = "<group>"; };
+		140C00E19F00DDF601ED8F83BB180FCB /* README */ = {isa = PBXFileReference; includeInIndex = 1; path = README; sourceTree = "<group>"; };
+		192FCB7FF4633A61933EBA122C42DD76 /* Pods-ALISJSBridgeKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1E1D6D685ACF3B872360E6987779757C /* APOpenSSL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APOpenSSL-dummy.m"; sourceTree = "<group>"; };
+		217C6B2D6F1734DD3AA3A41A07A05FF6 /* ALISJSBridgeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALISJSBridgeKit-prefix.pch"; sourceTree = "<group>"; };
+		26D88826390299E7CA25C19AEB00FED3 /* NebulaAppManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NebulaAppManager.framework; sourceTree = "<group>"; };
+		2AE10B596F7F1B5A2822BCD7CA79AAC9 /* Pods-ALISJSBridgeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2C72B9DC95FD5E579BA98FDF3B0A7114 /* Pods-ALISJSBridgeKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALISJSBridgeKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C8BBB0E7828CBD1B52E1DF3573DE2F4 /* libALISJSBridgeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libALISJSBridgeKit.a; path = libALISJSBridgeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		341F3D9DC365674AE9D8826F82A9BFF7 /* NebulaSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NebulaSDK-prefix.pch"; sourceTree = "<group>"; };
+		357071FAE78CF16BEAAE6B697CA9DBCA /* Pods-ALISJSBridgeKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALISJSBridgeKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		39102DBA74F2A85D9D12FF9DFE3B3A64 /* ALISJSBridgeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALISJSBridgeKit.h; path = ALISJSBridgeKit/Classes/ALISJSBridgeKit.h; sourceTree = "<group>"; };
+		41F08C5EBF703C2C7F53F8B0BFF8ECFE /* Pods-ALISJSBridgeKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALISJSBridgeKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		430508B255219C34F4B21819D3615CE4 /* APOpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APOpenSSL.framework; sourceTree = "<group>"; };
+		4F7B0FC1ACC350A7B25B349CD94428FC /* ALSJSBridgeModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ALSJSBridgeModuleManager.m; sourceTree = "<group>"; };
+		54E5861DBFB1472F40A2923B5A761F34 /* libPods-ALISJSBridgeKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ALISJSBridgeKit_Example.a"; path = "libPods-ALISJSBridgeKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5782E80D5F2A97C6A28A224CDEF9C491 /* NebulaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NebulaSDK.framework; sourceTree = "<group>"; };
+		59526BE539F1DA91980AE72C0E19A99B /* ALSJSBridgeModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ALSJSBridgeModule.m; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A537BA11F597F364F97089B2FD3F3D1 /* ALSJSBridgeModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSBridgeModuleManager.h; sourceTree = "<group>"; };
+		6AF4BD4935D63EB3D276EFA897C1FCF1 /* NebulaSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NebulaSDK.xcconfig; sourceTree = "<group>"; };
+		6BFEF7690F6C92308FADE20C55A714CF /* Pods-ALISJSBridgeKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALISJSBridgeKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E1B22B28426715B6F63085CE65AAB3E /* libPods-ALISJSBridgeKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ALISJSBridgeKit_Tests.a"; path = "libPods-ALISJSBridgeKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ECFED13296344AEFCFC2729C8E2C7B6 /* NebulaSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NebulaSDK-dummy.m"; sourceTree = "<group>"; };
+		764AFCEE55CB6C0958EC7133B823A958 /* Pods-ALISJSBridgeKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		81882EC9C66C115248C5D1C2A8CFB60E /* ALISJSBridgeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALISJSBridgeKit.xcconfig; sourceTree = "<group>"; };
+		81ADD11E65FB3F018993580758FDB479 /* Pods-ALISJSBridgeKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8FA36275B88C6EC16986F53838A1C8C2 /* Pods-ALISJSBridgeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9721A4B987D73EE292FEAFBD599D91A8 /* ALISBridgePluginProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALISBridgePluginProtocol.h; path = ALISJSBridgeKit/Classes/ALISBridgePluginProtocol.h; sourceTree = "<group>"; };
+		9A8F8839FB4AEC073E6C0F8D269CE876 /* ALISJSBridgeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALISJSBridgeKit-dummy.m"; sourceTree = "<group>"; };
+		AD413BD5C8CA5CCACCA78157A4732684 /* libAPOpenSSL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAPOpenSSL.a; path = libAPOpenSSL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B424BB20713D35122C69F41A5DC309F6 /* Pods-ALISJSBridgeKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		B982EF482F91D7EE7EFB18964EF2ED84 /* Pods-ALISJSBridgeKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALISJSBridgeKit_Example-dummy.m"; sourceTree = "<group>"; };
+		D0DC155D5BF241F5C41BD05E64C93FFA /* Pods-ALISJSBridgeKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALISJSBridgeKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3DBEF570093B2A282C8D5D39E0588E9 /* Pods-ALISJSBridgeKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D68E462949960EB79BC1677AAFBEBB21 /* NebulaPoseidon.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NebulaPoseidon.bundle; path = NebulaSDK.framework/NebulaPoseidon.bundle; sourceTree = "<group>"; };
+		DA9EFB593A7F0310C3837850E41CA8E9 /* ALSJSBridgeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSBridgeModule.h; sourceTree = "<group>"; };
+		DB40021F24EC26BD48084CDF79DB2822 /* ALSJSDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSDefine.h; sourceTree = "<group>"; };
+		E1B4DF5991DAF48B607664475CC1CD11 /* NebulaPoseidon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NebulaPoseidon.framework; sourceTree = "<group>"; };
+		E1D3D975E1259E3CD771D06BBEE46D31 /* libNebulaSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libNebulaSDK.a; path = libNebulaSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13067C1EFB1633705F9F98811289CA7 /* README */ = {isa = PBXFileReference; includeInIndex = 1; path = README; sourceTree = "<group>"; };
+		FB7F46BE869C87634B3566C301D76B76 /* Pods-ALISJSBridgeKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Example-resources.sh"; sourceTree = "<group>"; };
+		FE3C8E7C5115467D4640EB8D62D1F616 /* APOpenSSL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APOpenSSL-prefix.pch"; sourceTree = "<group>"; };
+		FECBA6BE2494503A97070D0E77D40EB3 /* NebulaSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NebulaSDK.bundle; path = NebulaSDK.framework/NebulaSDK.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1785BB1D37E4FC591AFF888EEAB37663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26FBE42EB1C82636591DCA7766FD50D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20890B3C11E6CC0FB6A6365D6C00455B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E751E5FFCF44E8B2C3C01DB68CE010 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B62F020D64E8D44BF290BCA1A80D0CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D777CB5DCF68B6417136F1E13D5B014F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737C473AC639A9C1A4B851EC9B1E11FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8DCFD5AAD93F7B66016620DFFF4CF11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25C48987EAB4344BAE965C36886DEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA981D21CFA303D5ECEE84EF4C1B0F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0633732B5F2614CB27BC5C95CB07EA5B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AF4BD4935D63EB3D276EFA897C1FCF1 /* NebulaSDK.xcconfig */,
+				6ECFED13296344AEFCFC2729C8E2C7B6 /* NebulaSDK-dummy.m */,
+				341F3D9DC365674AE9D8826F82A9BFF7 /* NebulaSDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NebulaSDK";
+			sourceTree = "<group>";
+		};
+		0FB82105B79D7066640A54CB4588FA9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E5CB2A4FFFE1224763CA31572D28932 /* APOpenSSL.xcconfig */,
+				1E1D6D685ACF3B872360E6987779757C /* APOpenSSL-dummy.m */,
+				FE3C8E7C5115467D4640EB8D62D1F616 /* APOpenSSL-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APOpenSSL";
+			sourceTree = "<group>";
+		};
+		23CC713E6F0500BD46B401429BEDFE5A /* ALISJSBridgeKit */ = {
+			isa = PBXGroup;
+			children = (
+				9721A4B987D73EE292FEAFBD599D91A8 /* ALISBridgePluginProtocol.h */,
+				39102DBA74F2A85D9D12FF9DFE3B3A64 /* ALISJSBridgeKit.h */,
+				C355CE13AECED1BA3781216ED853ACCE /* JSModules */,
+				7486EBA24AF166453700681B96B9DEF8 /* Support Files */,
+			);
+			name = ALISJSBridgeKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2CC6DAC1E4D7104BE4E20BC04C101196 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF25866A2DF17C95E05BD0FAE85A10 /* Pods-ALISJSBridgeKit_Example */,
+				F749934F0EC6BB45E9672FD2568ACB5B /* Pods-ALISJSBridgeKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		36ECD2F8FB02DF378A9D4FCB4945F576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				430508B255219C34F4B21819D3615CE4 /* APOpenSSL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E2FFB2BA7F76E47BE48EF0A499F83D0 /* NebulaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F13067C1EFB1633705F9F98811289CA7 /* README */,
+				B9F8378DECE062D4DAFE60343AE4718D /* Frameworks */,
+				A4283EB5855C9A065BB475CA70195222 /* Resources */,
+				0633732B5F2614CB27BC5C95CB07EA5B /* Support Files */,
+			);
+			name = NebulaSDK;
+			path = NebulaSDK;
+			sourceTree = "<group>";
+		};
+		7486EBA24AF166453700681B96B9DEF8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81882EC9C66C115248C5D1C2A8CFB60E /* ALISJSBridgeKit.xcconfig */,
+				9A8F8839FB4AEC073E6C0F8D269CE876 /* ALISJSBridgeKit-dummy.m */,
+				217C6B2D6F1734DD3AA3A41A07A05FF6 /* ALISJSBridgeKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ALISJSBridgeKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A67D62C62762E82BCE2D8701A661CCA9 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A3DFE9A33715221F0388C79C7FEE97AF /* Pods */,
+				7E013B9086D6BE099A07DCF101A8910B /* Products */,
+				2CC6DAC1E4D7104BE4E20BC04C101196 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E013B9086D6BE099A07DCF101A8910B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C8BBB0E7828CBD1B52E1DF3573DE2F4 /* libALISJSBridgeKit.a */,
+				AD413BD5C8CA5CCACCA78157A4732684 /* libAPOpenSSL.a */,
+				E1D3D975E1259E3CD771D06BBEE46D31 /* libNebulaSDK.a */,
+				54E5861DBFB1472F40A2923B5A761F34 /* libPods-ALISJSBridgeKit_Example.a */,
+				6E1B22B28426715B6F63085CE65AAB3E /* libPods-ALISJSBridgeKit_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3DFE9A33715221F0388C79C7FEE97AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF9CED121C4C1C44398E0BF5A7F16F /* APOpenSSL */,
+				3E2FFB2BA7F76E47BE48EF0A499F83D0 /* NebulaSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4283EB5855C9A065BB475CA70195222 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09E0652762ABDF42564A64A76AC7C70D /* NebulaAppManager.bundle */,
+				D68E462949960EB79BC1677AAFBEBB21 /* NebulaPoseidon.bundle */,
+				FECBA6BE2494503A97070D0E77D40EB3 /* NebulaSDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A67D62C62762E82BCE2D8701A661CCA9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23CC713E6F0500BD46B401429BEDFE5A /* ALISJSBridgeKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B9F8378DECE062D4DAFE60343AE4718D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26D88826390299E7CA25C19AEB00FED3 /* NebulaAppManager.framework */,
+				E1B4DF5991DAF48B607664475CC1CD11 /* NebulaPoseidon.framework */,
+				5782E80D5F2A97C6A28A224CDEF9C491 /* NebulaSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C355CE13AECED1BA3781216ED853ACCE /* JSModules */ = {
+			isa = PBXGroup;
+			children = (
+				DA9EFB593A7F0310C3837850E41CA8E9 /* ALSJSBridgeModule.h */,
+				59526BE539F1DA91980AE72C0E19A99B /* ALSJSBridgeModule.m */,
+				6A537BA11F597F364F97089B2FD3F3D1 /* ALSJSBridgeModuleManager.h */,
+				4F7B0FC1ACC350A7B25B349CD94428FC /* ALSJSBridgeModuleManager.m */,
+				0F7FC1F9C946BAA182F5849289BA9439 /* ALSJSBridgeModuleProtocol.h */,
+				DB40021F24EC26BD48084CDF79DB2822 /* ALSJSDefine.h */,
+			);
+			name = JSModules;
+			path = ALISJSBridgeKit/Classes/JSModules;
+			sourceTree = "<group>";
+		};
+		CCCF9CED121C4C1C44398E0BF5A7F16F /* APOpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				140C00E19F00DDF601ED8F83BB180FCB /* README */,
+				36ECD2F8FB02DF378A9D4FCB4945F576 /* Frameworks */,
+				0FB82105B79D7066640A54CB4588FA9E /* Support Files */,
+			);
+			name = APOpenSSL;
+			path = APOpenSSL;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D4CF25866A2DF17C95E05BD0FAE85A10 /* Pods-ALISJSBridgeKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2C72B9DC95FD5E579BA98FDF3B0A7114 /* Pods-ALISJSBridgeKit_Example-acknowledgements.markdown */,
+				41F08C5EBF703C2C7F53F8B0BFF8ECFE /* Pods-ALISJSBridgeKit_Example-acknowledgements.plist */,
+				B982EF482F91D7EE7EFB18964EF2ED84 /* Pods-ALISJSBridgeKit_Example-dummy.m */,
+				81ADD11E65FB3F018993580758FDB479 /* Pods-ALISJSBridgeKit_Example-frameworks.sh */,
+				FB7F46BE869C87634B3566C301D76B76 /* Pods-ALISJSBridgeKit_Example-resources.sh */,
+				192FCB7FF4633A61933EBA122C42DD76 /* Pods-ALISJSBridgeKit_Example.debug.xcconfig */,
+				D3DBEF570093B2A282C8D5D39E0588E9 /* Pods-ALISJSBridgeKit_Example.release.xcconfig */,
+			);
+			name = "Pods-ALISJSBridgeKit_Example";
+			path = "Target Support Files/Pods-ALISJSBridgeKit_Example";
+			sourceTree = "<group>";
+		};
+		F749934F0EC6BB45E9672FD2568ACB5B /* Pods-ALISJSBridgeKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6BFEF7690F6C92308FADE20C55A714CF /* Pods-ALISJSBridgeKit_Tests-acknowledgements.markdown */,
+				D0DC155D5BF241F5C41BD05E64C93FFA /* Pods-ALISJSBridgeKit_Tests-acknowledgements.plist */,
+				357071FAE78CF16BEAAE6B697CA9DBCA /* Pods-ALISJSBridgeKit_Tests-dummy.m */,
+				764AFCEE55CB6C0958EC7133B823A958 /* Pods-ALISJSBridgeKit_Tests-frameworks.sh */,
+				B424BB20713D35122C69F41A5DC309F6 /* Pods-ALISJSBridgeKit_Tests-resources.sh */,
+				8FA36275B88C6EC16986F53838A1C8C2 /* Pods-ALISJSBridgeKit_Tests.debug.xcconfig */,
+				2AE10B596F7F1B5A2822BCD7CA79AAC9 /* Pods-ALISJSBridgeKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-ALISJSBridgeKit_Tests";
+			path = "Target Support Files/Pods-ALISJSBridgeKit_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFB6346FAC9F82361CE3D5F20A34BE2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E2E5CF7E164CC24F1ADB985797DB90 /* ALISBridgePluginProtocol.h in Headers */,
+				B96F99D3A75A61F2B7E64341AF40AE8F /* ALISJSBridgeKit.h in Headers */,
+				7BEF91FEA23875E57C26B78B5AB89FDA /* ALSJSBridgeModule.h in Headers */,
+				4BF3E5FB8EFE9791340814CEC5D09E7B /* ALSJSBridgeModuleManager.h in Headers */,
+				7769DB0645B51F6303115D82932CC94C /* ALSJSBridgeModuleProtocol.h in Headers */,
+				674F34A55A6F8A1E1AF0E658B34BA62F /* ALSJSDefine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		120A59672E495F056C97CC0A93F789A0 /* ALISJSBridgeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E48673BEE51B660848BCE6516782961 /* Build configuration list for PBXNativeTarget "ALISJSBridgeKit" */;
+			buildPhases = (
+				67E992EABE26A71539D3B353B967A9A0 /* Sources */,
+				20890B3C11E6CC0FB6A6365D6C00455B /* Frameworks */,
+				DFB6346FAC9F82361CE3D5F20A34BE2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ALISJSBridgeKit;
+			productName = ALISJSBridgeKit;
+			productReference = 2C8BBB0E7828CBD1B52E1DF3573DE2F4 /* libALISJSBridgeKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		76CE1852084E1AF9E5FEF6E0C27C3289 /* Pods-ALISJSBridgeKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7414AB7108C72A6C93033E713212DE9 /* Build configuration list for PBXNativeTarget "Pods-ALISJSBridgeKit_Example" */;
+			buildPhases = (
+				C528C4C46DDFA2FCD80C4199726265AB /* Sources */,
+				A25C48987EAB4344BAE965C36886DEAB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A0F5BF87CDE11CF01C2633144BAA41C /* PBXTargetDependency */,
+				289113A7F2D8023957C195A0F7167949 /* PBXTargetDependency */,
+				7D33992636BCCB1FC1BC8C2EC569976F /* PBXTargetDependency */,
+			);
+			name = "Pods-ALISJSBridgeKit_Example";
+			productName = "Pods-ALISJSBridgeKit_Example";
+			productReference = 54E5861DBFB1472F40A2923B5A761F34 /* libPods-ALISJSBridgeKit_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BE4B724CD14638E04C1DFFB37FA4807 /* NebulaSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BF06A590C400CDDE2E8B2B70B0C92F /* Build configuration list for PBXNativeTarget "NebulaSDK" */;
+			buildPhases = (
+				1A6199854D3B5AD4E8D25AC99F816408 /* Sources */,
+				737C473AC639A9C1A4B851EC9B1E11FC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NebulaSDK;
+			productName = NebulaSDK;
+			productReference = E1D3D975E1259E3CD771D06BBEE46D31 /* libNebulaSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9E28FAC0E2E6D988CCFD488FB5DF34B0 /* APOpenSSL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 909764516E6792EF2CD9F469C402D102 /* Build configuration list for PBXNativeTarget "APOpenSSL" */;
+			buildPhases = (
+				457393BF4617F53C3C2ABE7D460C8987 /* Sources */,
+				1785BB1D37E4FC591AFF888EEAB37663 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APOpenSSL;
+			productName = APOpenSSL;
+			productReference = AD413BD5C8CA5CCACCA78157A4732684 /* libAPOpenSSL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F1DC305F57A25B36F9E4641AB1AC9FFE /* Pods-ALISJSBridgeKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4991E3A8BB72065330EFF5FC9A7D478B /* Build configuration list for PBXNativeTarget "Pods-ALISJSBridgeKit_Tests" */;
+			buildPhases = (
+				DC0A4C23249607150C5B4FEDD31B238B /* Sources */,
+				2B62F020D64E8D44BF290BCA1A80D0CC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ALISJSBridgeKit_Tests";
+			productName = "Pods-ALISJSBridgeKit_Tests";
+			productReference = 6E1B22B28426715B6F63085CE65AAB3E /* libPods-ALISJSBridgeKit_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7E013B9086D6BE099A07DCF101A8910B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				120A59672E495F056C97CC0A93F789A0 /* ALISJSBridgeKit */,
+				9E28FAC0E2E6D988CCFD488FB5DF34B0 /* APOpenSSL */,
+				7BE4B724CD14638E04C1DFFB37FA4807 /* NebulaSDK */,
+				76CE1852084E1AF9E5FEF6E0C27C3289 /* Pods-ALISJSBridgeKit_Example */,
+				F1DC305F57A25B36F9E4641AB1AC9FFE /* Pods-ALISJSBridgeKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A6199854D3B5AD4E8D25AC99F816408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C342219DB9728503827E7D3A7DED1277 /* NebulaSDK-dummy.m in Sources */,
+				2495455911331CD3E91117D018DA6A17 /* README in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457393BF4617F53C3C2ABE7D460C8987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD5289546250B3D33730AFE6F5223FB /* APOpenSSL-dummy.m in Sources */,
+				D6CF5EA8AED462B85D143C0CE4CA9CFB /* README in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E992EABE26A71539D3B353B967A9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2459B5F43C9E83D9C50EAC7051A9EBE2 /* ALISJSBridgeKit-dummy.m in Sources */,
+				E0B30B9F5FA91C9D0E023041E968988C /* ALSJSBridgeModule.m in Sources */,
+				625BA233BE49A053946A5B3DA8228A2D /* ALSJSBridgeModuleManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C528C4C46DDFA2FCD80C4199726265AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563EF72FA180353D0FDE5B02ED731852 /* Pods-ALISJSBridgeKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0A4C23249607150C5B4FEDD31B238B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6922F498BE9B3C018313A6B29FCE1CEE /* Pods-ALISJSBridgeKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		289113A7F2D8023957C195A0F7167949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APOpenSSL;
+			target = 9E28FAC0E2E6D988CCFD488FB5DF34B0 /* APOpenSSL */;
+			targetProxy = E2DB77F1DC7DC15871203BB98F90C405 /* PBXContainerItemProxy */;
+		};
+		6A0F5BF87CDE11CF01C2633144BAA41C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALISJSBridgeKit;
+			target = 120A59672E495F056C97CC0A93F789A0 /* ALISJSBridgeKit */;
+			targetProxy = F39794FBEB1C692FA371CBAECCC196D6 /* PBXContainerItemProxy */;
+		};
+		7D33992636BCCB1FC1BC8C2EC569976F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NebulaSDK;
+			target = 7BE4B724CD14638E04C1DFFB37FA4807 /* NebulaSDK */;
+			targetProxy = 2281C8D8F2E364EF96A021179A1A5A1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20A766C351BE2DF9191DA872208B5E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF4BD4935D63EB3D276EFA897C1FCF1 /* NebulaSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NebulaSDK/NebulaSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33820A4779F5FDF0269314EDD3A2B122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA36275B88C6EC16986F53838A1C8C2 /* Pods-ALISJSBridgeKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F36F6DDDFCF045F8D1CB80A8E3B38D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3DBEF570093B2A282C8D5D39E0588E9 /* Pods-ALISJSBridgeKit_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9F9FB5EB9C865B2B46A4373A39E4C444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE10B596F7F1B5A2822BCD7CA79AAC9 /* Pods-ALISJSBridgeKit_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A40CB2C6CE273D71219C401AA824FA11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81882EC9C66C115248C5D1C2A8CFB60E /* ALISJSBridgeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ALISJSBridgeKit/ALISJSBridgeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD66E3F722CAB3B537D684DCFAEA9387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF4BD4935D63EB3D276EFA897C1FCF1 /* NebulaSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NebulaSDK/NebulaSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFD5383038BA36F0CACA229D33A4BB46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5CB2A4FFFE1224763CA31572D28932 /* APOpenSSL.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/APOpenSSL/APOpenSSL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9580F31B03A77568385F3C3B64FC715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5CB2A4FFFE1224763CA31572D28932 /* APOpenSSL.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/APOpenSSL/APOpenSSL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2A72689105EED59F997161FA84D4831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81882EC9C66C115248C5D1C2A8CFB60E /* ALISJSBridgeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ALISJSBridgeKit/ALISJSBridgeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA17002F9DF1390A8B1F7BEB816C7FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 192FCB7FF4633A61933EBA122C42DD76 /* Pods-ALISJSBridgeKit_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4991E3A8BB72065330EFF5FC9A7D478B /* Build configuration list for PBXNativeTarget "Pods-ALISJSBridgeKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33820A4779F5FDF0269314EDD3A2B122 /* Debug */,
+				9F9FB5EB9C865B2B46A4373A39E4C444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E48673BEE51B660848BCE6516782961 /* Build configuration list for PBXNativeTarget "ALISJSBridgeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A40CB2C6CE273D71219C401AA824FA11 /* Debug */,
+				F2A72689105EED59F997161FA84D4831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		909764516E6792EF2CD9F469C402D102 /* Build configuration list for PBXNativeTarget "APOpenSSL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9580F31B03A77568385F3C3B64FC715 /* Debug */,
+				DFD5383038BA36F0CACA229D33A4BB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7414AB7108C72A6C93033E713212DE9 /* Build configuration list for PBXNativeTarget "Pods-ALISJSBridgeKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA17002F9DF1390A8B1F7BEB816C7FA1 /* Debug */,
+				4F36F6DDDFCF045F8D1CB80A8E3B38D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BF06A590C400CDDE2E8B2B70B0C92F /* Build configuration list for PBXNativeTarget "NebulaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A766C351BE2DF9191DA872208B5E71 /* Debug */,
+				CD66E3F722CAB3B537D684DCFAEA9387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

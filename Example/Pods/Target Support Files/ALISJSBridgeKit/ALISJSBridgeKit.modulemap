@@ -1,0 +1,6 @@
+framework module ALISJSBridgeKit {
+  umbrella header "ALISJSBridgeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 //
 
 #import "ALISViewController.h"
+#import <ALISJSBridgeKit/ALISJSBridgeKit.h>
 
 @interface ALISViewController ()
 
@@ -25,5 +26,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)ButtonTapped:(id)sender {
+    
+    //todo 也可以通过plist加载特定的plugin
+    [[ALSJSBridgeModuleManager sharedBridge] launchJSSDKPlugins];
+    [[ALSJSBridgeModuleManager sharedBridge] attachToBridge];
+    
+    UIViewController *vc = [[ALSJSBridgeModuleManager sharedBridge]  H5ViewControllerWithUrl:@"http://192.168.31.115:8080/nebula/"];
+    
+    
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:vc];
+    [self presentViewController:navigationController animated:YES completion:nil];
+    
+}
+
 
 @end

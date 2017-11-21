@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D78434311680CA9AE06D0D4 /* Pods_ALISJSBridgeKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F7AA9B3D7F4EA7CDD6CDCC /* Pods_ALISJSBridgeKit_Tests.framework */; };
+		1CBEA5589057A6917B652DEB /* libPods-ALISJSBridgeKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CE34F2AA79FEDB773C9399 /* libPods-ALISJSBridgeKit_Tests.a */; };
+		37F0D2506FB97ADE09A52009 /* libPods-ALISJSBridgeKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7501579AB45753521232623 /* libPods-ALISJSBridgeKit_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,9 +22,24 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		632384921FC3D6E0003D153C /* H5JsApi4DemoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 632384851FC3D6DE003D153C /* H5JsApi4DemoTest.m */; };
+		632384931FC3D6E0003D153C /* H5AlisPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 632384861FC3D6DE003D153C /* H5AlisPlugin.m */; };
+		632384941FC3D6E0003D153C /* NebulaSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 632384881FC3D6DF003D153C /* NebulaSDKManager.m */; };
+		632384951FC3D6E0003D153C /* H5CommonPlugin+AddJSApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */; };
+		632384961FC3D6E0003D153C /* H5CommonPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323848D1FC3D6DF003D153C /* H5CommonPlugin.m */; };
+		632384971FC3D6E0003D153C /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323848F1FC3D6DF003D153C /* H5WebViewController.m */; };
+		632384991FC3D7A9003D153C /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384981FC3D7A9003D153C /* libz.1.2.8.tbd */; };
+		6323849B1FC3D7B1003D153C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6323849A1FC3D7B1003D153C /* WebKit.framework */; };
+		6323849D1FC3D7B7003D153C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6323849C1FC3D7B7003D153C /* JavaScriptCore.framework */; };
+		632384A31FC3D869003D153C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384A21FC3D869003D153C /* libz.tbd */; };
+		632384A51FC3D877003D153C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384A41FC3D877003D153C /* libc++.tbd */; };
+		632384A71FC3D88E003D153C /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384A61FC3D88E003D153C /* libbz2.tbd */; };
+		632384A91FC3D8F3003D153C /* DemoPlugins.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 632384A81FC3D8F3003D153C /* DemoPlugins.bundle */; };
+		632384AB1FC3D9C0003D153C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384AA1FC3D9BF003D153C /* ImageIO.framework */; };
+		632384AD1FC3D9CB003D153C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384AC1FC3D9CB003D153C /* CoreTelephony.framework */; };
+		632384AF1FC3D9E2003D153C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384AE1FC3D9E2003D153C /* SystemConfiguration.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		D39041B4D83FCFA3FF9B5FFE /* Pods_ALISJSBridgeKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595C4B32BAEC3CE77860761F /* Pods_ALISJSBridgeKit_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1725B94706FCD5DEAC71C804 /* ALISJSBridgeKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ALISJSBridgeKit.podspec; path = ../ALISJSBridgeKit.podspec; sourceTree = "<group>"; };
-		595C4B32BAEC3CE77860761F /* Pods_ALISJSBridgeKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALISJSBridgeKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CE34F2AA79FEDB773C9399 /* libPods-ALISJSBridgeKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALISJSBridgeKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1725B94706FCD5DEAC71C804 /* ALISJSBridgeKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ALISJSBridgeKit.podspec; path = ../ALISJSBridgeKit.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ALISJSBridgeKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALISJSBridgeKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,14 +74,38 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		632384851FC3D6DE003D153C /* H5JsApi4DemoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5JsApi4DemoTest.m; sourceTree = "<group>"; };
+		632384861FC3D6DE003D153C /* H5AlisPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5AlisPlugin.m; sourceTree = "<group>"; };
+		632384871FC3D6DE003D153C /* NebulaSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NebulaSDKManager.h; sourceTree = "<group>"; };
+		632384881FC3D6DF003D153C /* NebulaSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NebulaSDKManager.m; sourceTree = "<group>"; };
+		6323848A1FC3D6DF003D153C /* H5CommonPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5CommonPlugin.h; sourceTree = "<group>"; };
+		6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "H5CommonPlugin+AddJSApi.m"; sourceTree = "<group>"; };
+		6323848C1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "H5CommonPlugin+AddJSApi.h"; sourceTree = "<group>"; };
+		6323848D1FC3D6DF003D153C /* H5CommonPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5CommonPlugin.m; sourceTree = "<group>"; };
+		6323848E1FC3D6DF003D153C /* H5AlisPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5AlisPlugin.h; sourceTree = "<group>"; };
+		6323848F1FC3D6DF003D153C /* H5WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5WebViewController.m; sourceTree = "<group>"; };
+		632384901FC3D6DF003D153C /* H5WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5WebViewController.h; sourceTree = "<group>"; };
+		632384911FC3D6E0003D153C /* H5JsApi4DemoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5JsApi4DemoTest.h; sourceTree = "<group>"; };
+		632384981FC3D7A9003D153C /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		6323849A1FC3D7B1003D153C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6323849C1FC3D7B7003D153C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6323849E1FC3D838003D153C /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		632384A01FC3D85C003D153C /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		632384A21FC3D869003D153C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		632384A41FC3D877003D153C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		632384A61FC3D88E003D153C /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		632384A81FC3D8F3003D153C /* DemoPlugins.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DemoPlugins.bundle; sourceTree = "<group>"; };
+		632384AA1FC3D9BF003D153C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		632384AC1FC3D9CB003D153C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		632384AE1FC3D9E2003D153C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		91A6747839AA61D782F163C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		91A6747839AA61D782F163C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9F424D3AC8CCCE4BBF257E6E /* Pods-ALISJSBridgeKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALISJSBridgeKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALISJSBridgeKit_Example/Pods-ALISJSBridgeKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AF00279CBEBBCE852D78E6EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AF00279CBEBBCE852D78E6EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B17343814DB4324DEDAA54F4 /* Pods-ALISJSBridgeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALISJSBridgeKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALISJSBridgeKit_Tests/Pods-ALISJSBridgeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B29FF0A1C1E47DF8CBC027D6 /* Pods-ALISJSBridgeKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALISJSBridgeKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALISJSBridgeKit_Example/Pods-ALISJSBridgeKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D3F7AA9B3D7F4EA7CDD6CDCC /* Pods_ALISJSBridgeKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALISJSBridgeKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7501579AB45753521232623 /* libPods-ALISJSBridgeKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ALISJSBridgeKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69724AE0D5A4C29649B7497 /* Pods-ALISJSBridgeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALISJSBridgeKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALISJSBridgeKit_Tests/Pods-ALISJSBridgeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,10 +114,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632384AF1FC3D9E2003D153C /* SystemConfiguration.framework in Frameworks */,
+				632384AD1FC3D9CB003D153C /* CoreTelephony.framework in Frameworks */,
+				632384AB1FC3D9C0003D153C /* ImageIO.framework in Frameworks */,
+				632384A71FC3D88E003D153C /* libbz2.tbd in Frameworks */,
+				632384A51FC3D877003D153C /* libc++.tbd in Frameworks */,
+				632384A31FC3D869003D153C /* libz.tbd in Frameworks */,
+				6323849D1FC3D7B7003D153C /* JavaScriptCore.framework in Frameworks */,
+				6323849B1FC3D7B1003D153C /* WebKit.framework in Frameworks */,
+				632384991FC3D7A9003D153C /* libz.1.2.8.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				D39041B4D83FCFA3FF9B5FFE /* Pods_ALISJSBridgeKit_Example.framework in Frameworks */,
+				37F0D2506FB97ADE09A52009 /* libPods-ALISJSBridgeKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +137,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				4D78434311680CA9AE06D0D4 /* Pods_ALISJSBridgeKit_Tests.framework in Frameworks */,
+				1CBEA5589057A6917B652DEB /* libPods-ALISJSBridgeKit_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,12 +168,23 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				632384AE1FC3D9E2003D153C /* SystemConfiguration.framework */,
+				632384AC1FC3D9CB003D153C /* CoreTelephony.framework */,
+				632384AA1FC3D9BF003D153C /* ImageIO.framework */,
+				632384A61FC3D88E003D153C /* libbz2.tbd */,
+				632384A41FC3D877003D153C /* libc++.tbd */,
+				632384A21FC3D869003D153C /* libz.tbd */,
+				632384A01FC3D85C003D153C /* libc++abi.tbd */,
+				6323849E1FC3D838003D153C /* libbz2.1.0.tbd */,
+				6323849C1FC3D7B7003D153C /* JavaScriptCore.framework */,
+				6323849A1FC3D7B1003D153C /* WebKit.framework */,
+				632384981FC3D7A9003D153C /* libz.1.2.8.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				595C4B32BAEC3CE77860761F /* Pods_ALISJSBridgeKit_Example.framework */,
-				D3F7AA9B3D7F4EA7CDD6CDCC /* Pods_ALISJSBridgeKit_Tests.framework */,
+				D7501579AB45753521232623 /* libPods-ALISJSBridgeKit_Example.a */,
+				06CE34F2AA79FEDB773C9399 /* libPods-ALISJSBridgeKit_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +192,7 @@
 		6003F593195388D20070C39A /* Example for ALISJSBridgeKit */ = {
 			isa = PBXGroup;
 			children = (
+				632384841FC3D6CB003D153C /* NebulaSDKPlugin */,
 				6003F59C195388D20070C39A /* ALISAppDelegate.h */,
 				6003F59D195388D20070C39A /* ALISAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -148,6 +209,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				632384A81FC3D8F3003D153C /* DemoPlugins.bundle */,
 				6003F595195388D20070C39A /* ALISJSBridgeKit-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -183,6 +245,33 @@
 				AF00279CBEBBCE852D78E6EE /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		632384841FC3D6CB003D153C /* NebulaSDKPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				632384891FC3D6DF003D153C /* DemoH5 */,
+				6323848E1FC3D6DF003D153C /* H5AlisPlugin.h */,
+				632384861FC3D6DE003D153C /* H5AlisPlugin.m */,
+				632384911FC3D6E0003D153C /* H5JsApi4DemoTest.h */,
+				632384851FC3D6DE003D153C /* H5JsApi4DemoTest.m */,
+				632384901FC3D6DF003D153C /* H5WebViewController.h */,
+				6323848F1FC3D6DF003D153C /* H5WebViewController.m */,
+				632384871FC3D6DE003D153C /* NebulaSDKManager.h */,
+				632384881FC3D6DF003D153C /* NebulaSDKManager.m */,
+			);
+			name = NebulaSDKPlugin;
+			sourceTree = "<group>";
+		};
+		632384891FC3D6DF003D153C /* DemoH5 */ = {
+			isa = PBXGroup;
+			children = (
+				6323848A1FC3D6DF003D153C /* H5CommonPlugin.h */,
+				6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */,
+				6323848C1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.h */,
+				6323848D1FC3D6DF003D153C /* H5CommonPlugin.m */,
+			);
+			path = DemoH5;
 			sourceTree = "<group>";
 		};
 		A8086AFCFBCC99FAF937FE24 /* Pods */ = {
@@ -280,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				632384A91FC3D8F3003D153C /* DemoPlugins.bundle in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -303,9 +393,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ALISJSBridgeKit_Example/Pods-ALISJSBridgeKit_Example-resources.sh",
+				"${PODS_ROOT}/NebulaSDK/NebulaSDK.framework/NebulaAppManager.bundle",
+				"${PODS_ROOT}/NebulaSDK/NebulaSDK.framework/NebulaPoseidon.bundle",
+				"${PODS_ROOT}/NebulaSDK/NebulaSDK.framework/NebulaSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -412,9 +507,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632384961FC3D6E0003D153C /* H5CommonPlugin.m in Sources */,
 				6003F59E195388D20070C39A /* ALISAppDelegate.m in Sources */,
+				632384941FC3D6E0003D153C /* NebulaSDKManager.m in Sources */,
 				6003F5A7195388D20070C39A /* ALISViewController.m in Sources */,
+				632384951FC3D6E0003D153C /* H5CommonPlugin+AddJSApi.m in Sources */,
+				632384931FC3D6E0003D153C /* H5AlisPlugin.m in Sources */,
+				632384921FC3D6E0003D153C /* H5JsApi4DemoTest.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				632384971FC3D6E0003D153C /* H5WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
