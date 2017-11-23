@@ -1,9 +1,9 @@
 {
   "name": "ALISJSBridgeKit",
   "version": "0.1.0",
-  "summary": "A short description of ALISJSBridgeKit.",
+  "summary": "阿里体育JavaScriptBridge",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/xwwang_0102@qq.com/ALISJSBridgeKit",
+  "homepage": "https://github.com/davidxwwang/ALISJSBridgeKit.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "xwwang_0102@qq.com": "xingwang.wxw@alibaba-inc.com"
   },
   "source": {
-    "git": "https://github.com/xwwang_0102@qq.com/ALISJSBridgeKit.git",
+    "git": "https://github.com/davidxwwang/ALISJSBridgeKit.git",
     "tag": "0.1.0"
   },
   "platforms": {

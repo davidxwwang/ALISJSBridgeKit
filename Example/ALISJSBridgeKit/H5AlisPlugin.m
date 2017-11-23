@@ -64,7 +64,7 @@
 {
     NSLog(@"%s is called",__func__);
     
-    [[NSNotificationCenter defaultCenter]postNotificationName:AlisNebulaSDKPluginJSCallBackNotification object:self];
+    [[NSNotificationCenter defaultCenter]postNotificationName:AlisNebulaSDKPluginDidLoadNotification object:self];
     
     self.scope = kPSDScope_Scene;
     // 可监听的事件可参考 NBDefines.h

@@ -11,13 +11,9 @@
 #import <NebulaSDK/NebulaSDK.h>
 #import <NebulaSDK/NBPluginBase.h>
 
-#import "ALSJSBridgeModuleManager.h"
+#import <ALISJSBridgeKit/ALISJSBridgeKit.h>
 
-#import "ALSJSBridgeModuleManager.h"
-
-extern NSString *const AlisNebulaSDKPluginJSCallBackNotification;
-
-@interface NebulaSDKManager : NSObject<ALISBridgePluginProtocol>
+@interface NebulaSDKManager : ALSJSBridgeBasePlugin
 
 + (NebulaSDKManager *)sharedInstanse;
 

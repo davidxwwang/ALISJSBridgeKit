@@ -16,12 +16,15 @@
 typedef void (^AlisJSApiResponseCallbackBlock)(id responseData);
 typedef void (^AlisJSApiHandlerBlock)(id data, AlisJSBridgeContext *context, AlisJSApiResponseCallbackBlock responseCallbackBlock);
 
+typedef NS_ENUM(NSInteger, ALSJSPluginPriority) {KALSJSPluginPriorityHigh = 3, KALSJSPluginPriorityMedian = 2, KALSJSPluginPriorityLow = 1};
+
 @protocol  ALISBridgePluginProtocol<NSObject>
 
 #define JSSDKPLUGIN_EXPORT_MODULE(js_name) \
 JS_EXTERN void JSSDKPluginRegisterModule(Class); \
 + (NSString *)moduleName { return @#js_name; } \
 + (void)load { JSSDKPluginRegisterModule(self); }
+
 /**
  使用extra的plugin配置
 
@@ -75,6 +78,9 @@ JS_EXTERN void JSSDKPluginRegisterModule(Class); \
 
 //处理的hander
 @property(strong ,nonatomic)AlisJSApiHandlerBlock apiHander;
+
+//优先级
+@property(assign ,nonatomic)ALSJSPluginPriority priority;
 
 - (UIViewController *)H5ViewControllerWithUrl:(NSString *)urlString;
 

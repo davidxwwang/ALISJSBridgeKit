@@ -7,7 +7,6 @@
 //
 
 #import "H5CommonPlugin.h"
-#import "NebulaSDKManager.h"
 
 // 该插件已在Poseidon-Extra-Config.plist中注册
 @implementation H5CommonPlugin
@@ -16,7 +15,7 @@
     NSLog(@"%s is called",__func__);
     self.scope = kPSDScope_Scene;
     
-    [[NSNotificationCenter defaultCenter]postNotificationName:AlisNebulaSDKPluginJSCallBackNotification object:self];
+    [[NSNotificationCenter defaultCenter]postNotificationName:AlisNebulaSDKPluginDidLoadNotification object:self];
     
     [super pluginDidLoad];
 }

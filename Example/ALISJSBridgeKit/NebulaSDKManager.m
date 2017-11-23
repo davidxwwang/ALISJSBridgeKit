@@ -12,8 +12,6 @@
 #import "H5AlisPlugin.h"
 #import "H5CommonPlugin.h"
 
-NSString *const AlisNebulaSDKPluginJSCallBackNotification = @"AlisNebulaSDKPluginJSCallBackNotification";
-
 @interface NebulaSDKManager ()
 
 /**
@@ -27,8 +25,6 @@ NSString *const AlisNebulaSDKPluginJSCallBackNotification = @"AlisNebulaSDKPlugi
 
 @implementation NebulaSDKManager {
 }
-
-@synthesize apiHander;
 
 JSSDKPLUGIN_EXPORT_MODULE();
 
@@ -46,7 +42,7 @@ JSSDKPLUGIN_EXPORT_MODULE();
 - (id)init{
     if(self = [super init]){
         self.addedExtraJSHanderDic = [NSMutableDictionary dictionary];
-         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pluginDidLoad:) name:AlisNebulaSDKPluginJSCallBackNotification object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pluginDidLoad:) name:AlisNebulaSDKPluginDidLoadNotification object:nil];
     }
     return self;
 }

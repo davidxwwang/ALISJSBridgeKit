@@ -267,9 +267,9 @@
 			isa = PBXGroup;
 			children = (
 				6323848A1FC3D6DF003D153C /* H5CommonPlugin.h */,
-				6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */,
-				6323848C1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.h */,
 				6323848D1FC3D6DF003D153C /* H5CommonPlugin.m */,
+				6323848C1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.h */,
+				6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */,
 			);
 			path = DemoH5;
 			sourceTree = "<group>";

@@ -23,6 +23,9 @@
 
 - (id<ALSJSBridgeModule>)moduleForName:(NSString *)moduleName;
 
+- (id<ALISBridgePluginProtocol>)allPlugins;
+- (id<ALISBridgePluginProtocol>)pluginWithName:(NSString *)pluginName;
+
 /**
  加载JSModule
  */

@@ -87,12 +87,16 @@ static ALSJSBridgeModuleManager *_JSCurrentBridgeInstance = nil;
 }
 
 - (void)attachToBridge{
+    //首先加载三方SDK的plugin
+    [self launchJSSDKPlugins];
+    
     [_JSModules removeAllObjects];
     for (Class c in JSModuleClasses) {
         id<ALSJSBridgeModule> module = [c new];
         [_JSModules addObject:module];
     }
     
+    //todo
     for (id<ALSJSBridgeModule>module in _JSModules) {
         //每个JS模块加载JS
         [module attachToJSBridge:self];
@@ -113,17 +117,34 @@ static ALSJSBridgeModuleManager *_JSCurrentBridgeInstance = nil;
     }
 }
 
+- (id<ALISBridgePluginProtocol>)allPlugins{
+    return [_JSSDKPlugins copy];
+}
+
+- (id<ALISBridgePluginProtocol>)pluginWithName:(NSString *)pluginName{
+    __block id<ALISBridgePluginProtocol> plugin = nil;
+    [_JSSDKPlugins enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *n = NSStringFromClass([(id<ALISBridgePluginProtocol>)obj class]);
+        if ([n isEqualToString:pluginName]) {
+            plugin = (id<ALISBridgePluginProtocol>)obj;
+            *stop = YES;
+        }
+    }];
+    return plugin;
+}
+
 - (void)registerHanderWithModule:(id<ALSJSBridgeModule>)module{
     NSDictionary *JSMessageHander = [module messagesHander];
     NSString *moduleSourceFilePath = [module moduleSourceFilePath];
-    //向第三方SDK注册JS  todo 
-    for (id<ALISBridgePluginProtocol> plugin in _JSSDKPlugins) {
-        if ([plugin respondsToSelector:@selector(registerJSApi:)]) {
-             [plugin registerJSApi:JSMessageHander];
+    //向优先级最高的第三方SDK注册JSplugin
+    id<ALISBridgePluginProtocol> highestPriorityPlugin = [self highestPriorityPlugin];
+    if (highestPriorityPlugin) {
+        if ([highestPriorityPlugin respondsToSelector:@selector(registerJSApi:)]) {
+            [highestPriorityPlugin registerJSApi:JSMessageHander];
         }
         //加载JS文件
-        if ([plugin respondsToSelector:@selector(addJSContent:)]) {
-            [plugin addJSContent:moduleSourceFilePath];
+        if ([highestPriorityPlugin respondsToSelector:@selector(addJSContent:)]) {
+            [highestPriorityPlugin addJSContent:moduleSourceFilePath];
         }
     }
 }
@@ -148,13 +169,30 @@ static ALSJSBridgeModuleManager *_JSCurrentBridgeInstance = nil;
 }
 
 - (UIViewController *)H5ViewControllerWithUrl:(NSString *)urlString{
-    //todo
-    for (id<ALISBridgePluginProtocol> plugin in _JSSDKPlugins) {
-        if ([plugin respondsToSelector:@selector(H5ViewControllerWithUrl:)]) {
-            return [plugin H5ViewControllerWithUrl:urlString];
-        }
+    //向优先级最高的第三方SDK请求
+    id<ALISBridgePluginProtocol> highestPriorityPlugin = [self highestPriorityPlugin];
+    if ([highestPriorityPlugin respondsToSelector:@selector(H5ViewControllerWithUrl:)]) {
+        return [highestPriorityPlugin H5ViewControllerWithUrl:urlString];
     }
     return nil;
+}
+
+/**
+ 最高优先级的plugin
+ */
+- (id<ALISBridgePluginProtocol>)highestPriorityPlugin{
+    id<ALISBridgePluginProtocol> highestPriorityPlugin = nil;
+    NSInteger highestPriority = -1000;
+    for (id<ALISBridgePluginProtocol> plugin in _JSSDKPlugins) {
+        ALSJSPluginPriority tempPriority = plugin.priority;
+        if (tempPriority) {
+            if(tempPriority > highestPriority){
+                highestPriority = tempPriority;
+                highestPriorityPlugin = plugin;
+            }
+        }
+    }
+    return highestPriorityPlugin;
 }
 
 @end

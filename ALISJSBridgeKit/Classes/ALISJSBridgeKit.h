@@ -11,5 +11,6 @@
 #import "ALISBridgePluginProtocol.h"
 #import "ALSJSBridgeModuleProtocol.h"
 #import "ALSJSBridgeModuleManager.h"
+#import "ALSJSBridgeBasePlugin.h"
 
 #endif /* ALISJSBridgeKit_h */
