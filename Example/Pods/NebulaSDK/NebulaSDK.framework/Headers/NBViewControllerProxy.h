@@ -53,4 +53,13 @@ typedef void(^NBDelayCallback)();
  *
  */
 - (void)resetOptions:(id<NBOptionsProtocol>)options;
+
+/**
+ 设置MainTitle的事件
+
+ @param mainTitle 
+ @param subtitle 
+ */
+- (void)sendSetMainTitleEvent:(NSString *)mainTitle subtitle:(NSString *)subtitle;
+
 @end

@@ -158,4 +158,13 @@
  */
 - (void)reset;
 
+
+/**
+ 转化ResponseData，支持ArrayBuffer
+
+ @param NSDictionary 原始数值
+ @return 转化后的数据
+ */
+- (NSDictionary *)transformResponseData:(id)responseData;
+
 @end

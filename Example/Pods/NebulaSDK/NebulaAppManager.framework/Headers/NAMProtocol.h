@@ -70,6 +70,8 @@ extern NSString *NAMREQ_PARAMKEY_LOCAL_APPS;
 extern NSString *NAMREQ_PARAMKEY_SCENE;
 extern NSString *NAMREQ_PARAMKEY_FORCE;             // 强制请求,忽略请求频率
 extern NSString *NAMREQ_PARAMKEY_REQTYPE;           // 请求类型 异步async/同步尝试synctry/同步强制syncforce
+extern NSString *NAMREQ_PARAMKEY_RESAPP;            // 请求的资源应用Id [appId, ...]
+extern NSString *NAMREQ_PARAMKEY_STABLE;            // 强大rpc标记
 
 extern NSString *NAMREQ_RESPONSEKEY_DATA;
 extern NSString *NAMREQ_RESPONSEKEY_CONFIG;
@@ -92,6 +94,8 @@ extern NSString *NAMREQ_RESPONSEKEY_SCENE;
 
 #pragma mark - Data Storage
 
+
+
 @protocol NAMDataStorageProtocol <NSObject>
 
 /**
@@ -99,7 +103,6 @@ extern NSString *NAMREQ_RESPONSEKEY_SCENE;
  *
  *  @return {appId:{version:NAMApp对象}}
  */
-- (NSDictionary *)allApps __deprecated;
 - (NSDictionary *)allApps:(NAMAppAutoScene)autoscene;
 
 /**
@@ -111,7 +114,6 @@ extern NSString *NAMREQ_RESPONSEKEY_SCENE;
  *
  *  @return 是否成功
  */
-- (BOOL)saveApps:(NSDictionary *)apps __deprecated;
 - (BOOL)saveApps:(NSDictionary *)apps scene:(NAMAppAutoScene)autoscene;
 
 /**
@@ -119,7 +121,6 @@ extern NSString *NAMREQ_RESPONSEKEY_SCENE;
  *
  *  @return {appid:已安装应用版本号version}
  */
-- (NSDictionary *)installedApps __deprecated;
 - (NSDictionary *)installedApps:(NAMAppAutoScene)autoscene;
 
 /**
@@ -129,7 +130,6 @@ extern NSString *NAMREQ_RESPONSEKEY_SCENE;
  *
  *  @return 是否成功
  */
-- (BOOL)saveInstalledApps:(NSDictionary *)installedApps __deprecated;
 - (BOOL)saveInstalledApps:(NSDictionary *)installedApps scene:(NAMAppAutoScene)autoscene;
 
 /**
@@ -167,6 +167,14 @@ extern NSString *NAMREQ_RESPONSEKEY_SCENE;
  */
 - (BOOL)saveData:(id)data forKey:(NSString *)key;
 
+
+@optional
+
+- (NSDictionary *)allApps __deprecated;
+- (BOOL)saveApps:(NSDictionary *)apps __deprecated;
+- (NSDictionary *)installedApps __deprecated;
+- (BOOL)saveInstalledApps:(NSDictionary *)installedApps __deprecated;
+
 @end
 
 
@@ -176,6 +184,9 @@ extern NSString *const NAMLogParamApp;
 extern NSString *const NAMLogParamAppId;
 extern NSString *const NAMLogParamVersion;
 extern NSString *const NAMLogParamCustom;
+extern NSString *const NAMLogParamBizType;
+
+extern NSString *const NAMLogParamBizTypeWebstat;
 
 typedef NS_ENUM (NSUInteger, NAMLogStep) {
     NAMLogStepBegin = 0,
@@ -204,7 +215,10 @@ typedef NS_ENUM (NSUInteger, NAMLogType) {
     NAMLogTypeVerifyApp,            // 验签应用
     NAMLogTypeRequestApps,          // 请求应用
     NAMLogTypeAppPool,              // 包管理池变更,增、删、改
-    NAMLogTypeExceptionHandler      // 异常管理, 1. 强制请求列表增、删 2. 验证url
+    NAMLogTypeExceptionHandler,     // 异常管理, 1. 强制请求列表增、删 2. 验证url
+
+    // Webstat
+    NAMLogTypeWebstatZhuangjiliang, // 装机量埋点
 };
 
 @class NAMApp;
@@ -359,6 +373,21 @@ typedef NS_ENUM (NSUInteger, NAMLogType) {
  *      2. 使用强大rpc
  */
 - (BOOL)isAppHighPriority:(NSString *)appId;
+
+/**
+ * 是否允许加载业务资源包, 默认:是
+ */
+- (BOOL)enableLoadPkgResApps:(NSNumber **)numLimit;
+
+/**
+ * 是否允许忽略预置信息入口版本, 取最高版本, 默认:是
+ */
+- (BOOL)enableIgnorePresetVersion;
+
+/**
+ * 是否是资源型应用
+ */
+- (BOOL)isResApp:(NSString *)appId;
 
 @end
 

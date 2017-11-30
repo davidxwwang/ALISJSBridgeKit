@@ -104,6 +104,8 @@ typedef NS_ENUM(NSInteger, PSDPluginPriority) {
 #define kEvent_Navigation_All                   @"navigation.*"
 
 //**********************Invocation   Events***********************//
+#define kEvent_Invocation_Invocation_Before     @"invocation.invoke.before" // 监听该事件，可以阻止事件
+
 #define kEvent_Invocation_Event_Start           @"invocation.event.start" // 监听该事件，可以调用preventDefault阻止默认行为（默认是询问是否可以执行），若阻止了，则不会往下执行调用
 #define kEvent_Invocation_Start                 @"invocation.start" // 监听该事件，可以调用preventDefault阻止默认行为（默认是询问是否可以执行），若阻止了，则不会往下执行调用
 #define kEvent_Invocation_Invoke                @"invocation.invoke" // 监听该事件，可以调用preventDefault阻止默认行为（默认是将要开始执行方法），若要自定义执行方法，则需要执行`responseCallback`将结果回调给页面
@@ -120,6 +122,8 @@ typedef NS_ENUM(NSInteger, PSDPluginPriority) {
 #define kEvent_Proxy_Request_ReceiveData        @"proxy.request.data.receive" // 监听该事件，可以处理`willHoldReceiveData`和`reveiceData`，如果willHoldReceiveData=YES，则数据会被暂时持有在内存 处理：分段data，处理过程中不会response已有的receive data
 #define kEvent_Proxy_Request_FinishReceiveData  @"proxy.request.data.finish" // 监听该事件，可以处理`receiveData` 处理：完整data，并response回去
 #define kEvent_Proxy_Request_Finish             @"proxy.request.finish"
+#define kEvent_Proxy_Request_Finish_Metrics     @"proxy.request.finish.metrics"
+
 
 //**********************ProxyMonitor Events***********************//
 #define kEvent_ProxyMonitor_Report_Profile      @"proxy.monitor.report.profile"
@@ -128,4 +132,23 @@ typedef NS_ENUM(NSInteger, PSDPluginPriority) {
 //**********************Monitor Events***********************//
 #define kEvent_Monitor_Log_Before               @"monitor.log.before"
 
+//**********************Message Handler***********************//
 
+#define KPSDBRIDGEMESSAGEHANDLER        @"PSDBRIDGEMESSAGEHANDLER"
+#define KPSDBRIDGEDOMREADY              @"PSDBRIDGEDOMREADY"
+#define KPSDXMLHTTPREQUESTMESSAGE       @"PSDXMLHTTPREQUESTMESSAGE"
+#define KPSDXNEBULAXMLHTTPREQUEST       @"X-NEBULAXMLHTTPREQUEST"
+#define KPSDXMSGID                      @"msgId"
+#define KPSDXMSGCOOKIE                  @"msgCookie"
+#define KPSDXMSGMAINURL                 @"msgMainUrl"
+#define KPSDXMSGVAL                     @"val"
+#define KPSDXMSGTYPE                    @"type"
+#define KPSDXMSGENCTYPE                 @"FormEnctype"
+#define KPSDXMSGACCEPTCHARSET           @"AcceptCharset"
+#define KPSDXMSGDOCUMENTCHARSET         @"DocumentCharset"
+#define KPSDXMSGISSTREAM                @"IsStream"
+#define KPSDXMSGNAME                    @"name"
+#define KPSDXMSGVALUE                   @"value"
+#define KPSDFORMENCTYPEOFURLENCODE      @"application/x-www-form-urlencoded"
+#define KPSDFORMENCTYPEOFPLAIN          @"text/plain"
+#define kPSDSceneInjectRequest          @"kPSDSceneInjectRequest"

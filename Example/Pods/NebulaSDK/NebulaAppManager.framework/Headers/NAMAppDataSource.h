@@ -102,4 +102,14 @@
  *  @return 返回配置数据
  */
 - (NSDictionary *)readNBAppConfig;
+
+/**
+ *  @brief 通过指定key(路径)获取内存中对应离线内容
+ *         调用前需使用loadAppData加载离线资源
+ *
+ *  @param key 路径
+ *  @return 返回内存中对应离线内容
+ */
+- (NSData *)tarDataForKey:(NSString *)key;
+
 @end

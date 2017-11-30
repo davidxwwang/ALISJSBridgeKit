@@ -1,6 +1,8 @@
 #use_frameworks!
 
 source 'http://gitlab.alibaba-inc.com/NebulaSDK/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '9.0'
 
 target 'ALISJSBridgeKit_Example' do
@@ -8,6 +10,7 @@ target 'ALISJSBridgeKit_Example' do
 
   pod 'NebulaSDK'
   pod 'APOpenSSL'
+  pod 'AEHybridEngine', :git => 'https://github.com/AltairEven/AEHybridEngine.git'
   
   target 'ALISJSBridgeKit_Tests' do
     inherit! :search_paths

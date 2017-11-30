@@ -80,6 +80,7 @@ NSAssert(condition, reason);\
 #define kNBOptions_ShowOptionMenu                 @"showOptionMenu"
 #define kNBOptions_ShowTitleLoading               @"showTitleLoading"
 #define kNBOptions_ShowDomain                     @"showDomain"
+#define kNBOptions_PushingURLString               @"pushingURLString"
 
 #define kNBOptions_UrlShort                       @"u"
 #define kNBOptions_DefaultTitleShort              @"dt"
@@ -105,6 +106,11 @@ NSAssert(condition, reason);\
 #define kNBBackBehaviorPop     @"pop"
 #define kNBBackBehaviorBack    @"back"
 
+//*******************************Session Events***************************//
+#pragma mark - Session Events
+
+#define kNBEvent_Session_Pause         @"session.pause"   // 保活功能，退出使用，到后台保活
+#define kNBEvent_Session_Resume        @"session.resume"  // 保活功能，从后台保活恢复使用
 
 //*******************************Scene Events***************************//
 #pragma mark - Scene Events

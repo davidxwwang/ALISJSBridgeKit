@@ -44,6 +44,18 @@
 
 + (BOOL)canUseDiskCache;
 
++ (BOOL)canUseNSURLSession;
+
++ (void)setCanUseNSURLSession:(BOOL)use;
+
++ (void)setNSURLSessionExtraProtocolClasses:(NSArray<Class> *)classes;
+
++ (NSArray<Class> *)nSURLSessionExtraProtocolClasses;
+
+/**
+ *  清除WKBody缓存
+ */
++ (void)clearWKBodyCache;
 
 /**
  *  给EventTarget对像添加事件监听者

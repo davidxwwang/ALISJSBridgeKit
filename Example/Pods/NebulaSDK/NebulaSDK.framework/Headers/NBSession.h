@@ -16,4 +16,6 @@
 @property(nonatomic, strong) NBSessionDelegate          *delegate;
 @property(nonatomic, readonly, strong) NBSessionContext *context;
 
+- (void)loadDataSourceForApps:(NSArray *)arrApps;
+
 @end

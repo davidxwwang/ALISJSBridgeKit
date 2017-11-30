@@ -21,6 +21,7 @@ typedef enum {
 @property(nonatomic, assign) PSDPanelType panelType;
 @property(nonatomic, copy) NSString *panelTitle;
 @property(nonatomic, copy) NSString *injectJs;
+@property(nonatomic, copy) NSDictionary *expandParams;
 
 + (instancetype)allEvent;
 

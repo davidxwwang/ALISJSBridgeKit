@@ -65,8 +65,9 @@ typedef NS_ENUM(NSUInteger, NBChannel) {
 //WK
 @property(nonatomic, assign) int                    WKRetryTimes;
 
-@property(nonatomic, assign) BOOL                   viewControllerProxyNotLazy;
-
+//check
+@property(nonatomic, assign) BOOL                   shouldCheckJsApiArguments;
+@property(nonatomic, copy)   NSArray                *skipJsApiCheckBlackList;
 
 + (instancetype)alloc UNAVAILABLE_ATTRIBUTE;
 

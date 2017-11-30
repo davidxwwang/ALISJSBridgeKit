@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "PSDJsApi.h"
+#import "PSDArgumentsChecker.h"
 
 //通用错误回调 
 void ErrorCallback(PSDJsApiResponseCallbackBlock callback, int code);
@@ -20,12 +21,17 @@ void ErrorCallback(PSDJsApiResponseCallbackBlock callback, int code);
 
 #define e_user_cancel           11  //用户取消操作
 
+#define PSD_CALLBACK_TYPE_INFO              @"NEBULATYPEINFO"
+#define PSD_CALLBACK_KEY_OF_TYPE            @"type"
+#define PSD_CALLBACK_TYPE_ARRAYBUFFER       @"ArrayBuffer"
+
+
 
 @class PSDContext;
 
 //JsApi处理类（基类）
-@interface PSDJsApiHandler : NSObject
-
+@interface PSDJsApiHandler : NSObject <PSDArgumentsCheckerProtocal>
+@property(nonatomic, strong) PSDArgumentsChecker *checker;
 /**
  *  @brief JsApi处理函数
  *

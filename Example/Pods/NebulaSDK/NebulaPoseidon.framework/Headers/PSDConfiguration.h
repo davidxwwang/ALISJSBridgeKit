@@ -20,6 +20,8 @@
 @property(nonatomic, strong) WKWebViewConfiguration *wkConfiguration;
 @property(nonatomic, assign) BOOL        shouldUseJSCInjectJS;
 @property(nonatomic, assign) BOOL        shouldSyncWKCookie;
+@property(nonatomic, assign) BOOL        shouldUseNewMessageReplacing;
+
 
 + (instancetype)defaultConfiguration;
 

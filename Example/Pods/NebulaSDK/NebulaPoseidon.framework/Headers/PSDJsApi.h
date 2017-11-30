@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PSDArgumentsChecker.h"
 
 @class PSDContext;
+@class PSDJsApiHandler;
 
 typedef void (^PSDJsApiResponseCallbackBlock)(id responseData);
 typedef void (^PSDJsApiHandlerBlock)(NSDictionary *data, PSDContext *context, PSDJsApiResponseCallbackBlock responseCallbackBlock);
 
 //JsApi类，注：优先使用PSDJsApiHandlerBlock，若不存在，才使用handlerClass进行处理
-@interface PSDJsApi : NSObject
+@interface PSDJsApi : NSObject <PSDArgumentsCheckerProtocal>
 
 @property(nonatomic, readonly, copy) NSString               *name; // JsApi名称
 @property(nonatomic, copy) NSString *alias;
@@ -24,6 +26,8 @@ typedef void (^PSDJsApiHandlerBlock)(NSDictionary *data, PSDContext *context, PS
 @property(nonatomic, readonly, assign) BOOL                 isPrivate; // 是否私有（决定是否能被反注册、覆盖）
 @property(nonatomic, readonly, copy) NSString               *scope; // 作用域
 
+@property(nonatomic, strong) PSDJsApiHandler                *jsApiHandler;
+@property(nonatomic, strong) PSDArgumentsChecker            *checker;
 /**
  *  @brief 创建一个JsApi对象
  *

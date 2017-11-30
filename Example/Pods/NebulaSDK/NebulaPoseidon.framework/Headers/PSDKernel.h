@@ -24,13 +24,13 @@
 #define PSD_ASSERT(condition) \
 if (!condition) {\
     NSString *reason = [NSString stringWithFormat:@"\n\n***********************************************************\nPOSEIDON内核抛出的断言（Kernel Assert）:\n函数:%s-%d \ncondition=%s\n\n", __FUNCTION__, __LINE__, #condition];\
-    NSLog(@"%@%@",condition, reason);\
+    NSLog(@"%@",reason);\
 }
 
 #define PSD_ASSERT2(condition, desc) \
 if (!condition) {\
     NSString *reason = [NSString stringWithFormat:@"\n\n***********************************************************\nPOSEIDON内核抛出的断言（Kernel Assert）:\n函数:%s-%d \ncondition=%s desc=%@\n\n", __FUNCTION__, __LINE__, #condition, desc];\
-    NSLog(@"%@%@",condition, reason);\
+    NSLog(@"%@", reason);\
 }
 
 @class PSDJsApiManager;

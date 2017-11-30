@@ -56,8 +56,8 @@ typedef NS_ENUM(NSUInteger, NAMAppPrepareStep) {
     NAMAppPrepareStepAcquireInfoFinish, // AcquireInfoFinish
     NAMAppPrepareStepDownload,          // Download
     NAMAppPrepareStepUnzip,             // Unzip
-    NAMAppPrepareStepDelegatePrepare,   // Delegate prepare
-    NAMAppPrepareStepFinished           // Finished
+    NAMAppPrepareStepFinished,          // Finished
+    NAMAppPrepareStepLaunch             // LaunchPrepare
 };
 
 // prepare finish info key
@@ -72,10 +72,9 @@ typedef void (^NAMAppPrepareFinishWithInfo)(NAMApp *app, NSError *error, id info
 /*
  * return: can be interrupt
  * processor-dicInfo:
- *      key     value
- *      'step'    currentstep
+ *      key      value
+ *      'error'  error
  */
-extern NSString *const NAMAppPrepareProcessorInfoStep;
 typedef void (^NAMFinishBlock)(NSError *error);
 typedef NSError *(^NAMAppPrepareProcessor)(NAMAppPrepareStep step, NAMApp *app, NSDictionary *dicInfo, NAMFinishBlock finish);  // prepare step
 

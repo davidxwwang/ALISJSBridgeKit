@@ -35,6 +35,11 @@ JS_EXPORT_MODULE();
         NSLog(@"%@ is called",context.JSApiName);
     };
     [self registerJSHandler:@"alisAlipay" handler:hander];
+    
+    AlisJSApiHandlerBlock hander2 = ^(id data, AlisJSBridgeContext *context, AlisJSApiResponseCallbackBlock responseCallbackBlock){
+        NSLog(@"%@ is called",context.JSApiName);
+    };
+    [self registerJSHandler:@"aesSetTitle" handler:hander2];
 }
 
 - (void)registerJSHandler:(NSString *)name handler:(AlisJSApiHandlerBlock)handler{

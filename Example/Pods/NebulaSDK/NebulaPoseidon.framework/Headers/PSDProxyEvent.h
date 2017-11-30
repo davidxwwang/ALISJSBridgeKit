@@ -25,7 +25,8 @@
 @property(nonatomic, assign) BOOL                   willHoldReceiveData; // 生效：kEvent_Proxy_Request_ReceiveData
 @property(nonatomic, assign) NSUInteger             receiveDataLength; // 生效：kEvent_Proxy_Request_Finish
 @property(nonatomic, readonly, strong) PSDResponse  *customResponse;
-
+@property(nonatomic, strong) NSURLSessionTask       *task;
+@property(nonatomic, strong) NSURLSessionTaskMetrics *metrics;
 //处理request
 + (instancetype)requestHandlerEvent:(NSURLRequest *)request
                         requestDate:(NSDate *)requestDate
@@ -86,5 +87,12 @@
                           error:(NSError *)error
                        uniqueId:(NSString *)uniqueId
                       channelId:(NSString *)channelId;
+
++ (instancetype)finishCollectingMetricsEvent:(NSURLSessionTaskMetrics *)metrics
+                                     request:(NSURLRequest *)request
+                                    response:(NSURLResponse *)response
+                                        task:(NSURLSessionTask *)task
+                                    uniqueId:(NSString *)uniqueId
+                                   channelId:(NSString *)channelId;
 
 @end

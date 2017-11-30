@@ -220,6 +220,13 @@
  */
 - (NSArray *)allAppIds;
 
+/**
+ * 判断指定appId是否为资源型应用
+ * 
+ * @param 指定应用appId
+ */
+- (BOOL)isResApp:(NSString *)appId;
+
 @end
 
 
@@ -242,6 +249,11 @@
  */
 - (void)log:(NAMLogContext *)context;
 
+
+/**
+ * 其他渠道数据更新处理
+ */
+- (void)processData:(NSDictionary *)data reqlist:(NSDictionary *)reqlist autoDownload:(BOOL)autoDownload;
 
 @end
 

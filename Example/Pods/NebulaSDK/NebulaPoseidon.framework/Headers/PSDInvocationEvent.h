@@ -46,4 +46,10 @@
 + (instancetype)startEvent:(NSString *)invocationName
                  eventData:(NSDictionary *)invocationData
                        url:(NSString *)url;
+
++ (instancetype)invokeBeforeEvent:(NSString *)invocationName
+             invocationData:(NSDictionary *)invocationData
+                        url:(NSString *)url
+                      jsApi:(PSDJsApi *)jsApi
+                 responseCallback:(PSDJsApiResponseCallbackBlock)responseCallback;
 @end

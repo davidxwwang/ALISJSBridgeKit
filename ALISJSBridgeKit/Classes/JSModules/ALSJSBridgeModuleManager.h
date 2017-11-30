@@ -37,6 +37,18 @@
 - (void)launchJSSDKPlugins;
 
 
+/**
+ 生成相应的h5容器
+ */
 - (UIViewController *)H5ViewControllerWithUrl:(NSString *)urlString;
+
+/**
+ native向h5发数据
+
+ @param handlerName JS名称
+ @param data 数据
+ @param callback 回调
+ */
+- (void)callHandler:(NSString *)handlerName data:(id)data responseCallback:(void (^)(id))callback;
 
 @end

@@ -38,6 +38,7 @@
 @property(nonatomic) BOOL fullscreen; //not implementation
 @property(nonatomic) BOOL enableJSC; //not implementation
 @property(nonatomic, strong) NSObject *customParams;
+@property(nonatomic, copy) NSString *pushingURLString;
 
 
 

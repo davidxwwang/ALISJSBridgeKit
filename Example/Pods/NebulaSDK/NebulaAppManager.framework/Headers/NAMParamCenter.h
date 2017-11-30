@@ -19,4 +19,10 @@
 // 请求时间限制
 + (NSTimeInterval)prepareLimit:(NAMApp *)app force:(BOOL)force;
 
+// 业务缓存资源appId
++ (NSArray *)pkgResApps:(NAMApp *)app;
+
+// 是否为资源型应用
++ (BOOL)isResApp:(NAMApp *)app;
+
 @end

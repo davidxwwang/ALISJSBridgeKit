@@ -40,13 +40,13 @@
     yy = [[ALSJSBridgeModuleManager alloc]init];
     [yy attachToBridge];
     //[yy launchJSSDKPlugins];
-    id<ALISBridgePluginProtocol> plugin = [yy pluginWithName:@"NebulaSDKManager"];
+    //也可以使用plist NebulaSDKManager
+    id<ALISBridgePluginProtocol> plugin = [yy pluginWithName:@"AEHybridEngineManager"];
     if (plugin) {
         plugin.priority = KALSJSPluginPriorityHigh;
     }
-     
-    UIViewController *vc = [yy H5ViewControllerWithUrl:@"http://192.168.31.115:8080/nebula/"];
-    
+    //  @"http://192.168.31.115:8080/nebula/"
+    UIViewController *vc = [yy H5ViewControllerWithUrl:@"http://testesports.alisports.com/static/demo/jsbridge1.0.0.html"];
     
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:vc];
     [self presentViewController:navigationController animated:YES completion:nil];

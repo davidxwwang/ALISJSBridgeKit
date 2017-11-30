@@ -126,14 +126,11 @@ JSSDKPLUGIN_EXPORT_MODULE();
     }];
 }
 
-//native --> h5
+//native --> h5 
 - (void)callHandler:(NSString *)handlerName data:(id)data responseCallback:(void (^)(id))callback{
     if (handlerName == nil) return;
-    
     [self.h5ViewController callHandler:handlerName data:data responseCallback:^(NSDictionary *responseData){
-        if (callback) {
-            callback(responseData);
-        }
+        if (callback) callback(responseData);
     }];
 }
 
