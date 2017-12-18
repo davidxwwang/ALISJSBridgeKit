@@ -5,13 +5,15 @@
 //  Created by alisports on 2017/10/31.
 //  Copyright © 2017年 alisports. All rights reserved.
 //
+
+#import "NebulaSDKPluginHeader.h"
+
+#ifdef ALS_HAS_NebulaSDK 
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
-#import <NebulaSDK/NebulaSDK.h>
-#import <NebulaSDK/NBPluginBase.h>
-
-#import <ALISJSBridgeKit/ALISJSBridgeKit.h>
+#import "ALSJSBridgeBasePlugin.h"
+#import "AlisJSBridgeContext.h"
 
 @interface NebulaSDKManager : ALSJSBridgeBasePlugin
 
@@ -27,3 +29,5 @@
 - (NSDictionary *)JSHandersDicForClassStr:(NSString *)classString;
 
 @end
+
+#endif

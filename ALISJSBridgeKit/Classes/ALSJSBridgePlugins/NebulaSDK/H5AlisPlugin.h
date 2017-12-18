@@ -7,8 +7,14 @@
 //
 
 
+#import "NebulaSDKPluginHeader.h"
+
+#ifdef ALS_HAS_NebulaSDK 
+
 @interface H5AlisPlugin : NBPluginBase
 
 @property(weak , nonatomic)NebulaSDKManager *manager;
 
 @end
+
+#endif

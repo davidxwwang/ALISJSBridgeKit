@@ -5,7 +5,10 @@
 //  Created by alisports on 2017/11/15.
 //  Copyright © 2017年 alisports.sportsman. All rights reserved.
 //
+
+#import "AlisJSBridgeContext.h"
 #import "ALSJSBridgeModuleManager.h"
+
 //JS加载模块
 static NSMutableArray<Class> *JSModuleClasses;
 
@@ -37,6 +40,7 @@ void JSSDKPluginRegisterModule(Class JSSDKPluginClass){
     }
     [JSSDKPluginClasses addObject:JSSDKPluginClass];
 }
+
 
 @interface ALSJSBridgeModuleManager()
 /**
@@ -215,10 +219,5 @@ static ALSJSBridgeModuleManager *_JSCurrentBridgeInstance = nil;
 }
 
 @end
-
-@implementation AlisJSBridgeContext
-@end
-
-
 
 

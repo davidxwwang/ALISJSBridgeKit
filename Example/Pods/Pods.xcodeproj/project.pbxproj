@@ -7,39 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DAEE0D96D9C325022E4B2DF06F2FD7D /* ALSJSBridgeModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B2DF5B3CAA99A54CD76630B63E568F /* ALSJSBridgeModuleManager.m */; };
-		0E08CCBBC0ED27272C2B21D454DCAEAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		02A620428225CE4C87E49D914358AA13 /* NebulaSDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 161527EEB205D9BCB604B1A6141EC066 /* NebulaSDKManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A250115C829EFABB0B82E5D96B4672E /* ALSJSBridgeBasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AB781BE00428EA39F848DF68DBE6AE /* ALSJSBridgeBasePlugin.m */; };
+		1065132DB62E0705B3C6DA90162E1BF3 /* ALSJSBridgeModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 990A068D1A91BF077DB07788B50A7D6D /* ALSJSBridgeModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		172DFF057CA8F77B31EE6A61A78958AC /* AEHybridEngineViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC7FFA8A9FEF47E525499F20B063CFF /* AEHybridEngineViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B511A3B0FE57FB1F78600BD23609AD8 /* AEWebViewContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF904691D9D0A98C662AAA8174020A0 /* AEWebViewContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D956091112E4654AB8142D86B6920C4 /* AEHybridLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB6C208140271F3C1263B432C5E203A /* AEHybridLauncher.m */; };
 		235CE34E0EA72755A17971DFF000987C /* Pods-ALISJSBridgeKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B982EF482F91D7EE7EFB18964EF2ED84 /* Pods-ALISJSBridgeKit_Example-dummy.m */; };
 		2495455911331CD3E91117D018DA6A17 /* README in Sources */ = {isa = PBXBuildFile; fileRef = 34DE9275D2E1803976A5A7403F3E607E /* README */; };
-		24ED64C9E926ECA2A9F4E38A2132122C /* ALSJSBridgeBasePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C51141EAF003E5B24C35E821077A6 /* ALSJSBridgeBasePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		286CEF60458DE9781E99E24DD39C569F /* AEWebCookieStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = AFFF21302B1223D2E2FE56A83F9FFD00 /* AEWebCookieStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36C5EC58277F3FEFD49C8FA78DDED738 /* ALSJSDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B14266DE05D0AB8CCE91F92D8A28ACE /* ALSJSDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3765C017D663364A119E6CAA9051BBB3 /* ALSJSBridgeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F252D65FDBB54E23C759AE4FB1D2C52C /* ALSJSBridgeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3595E7F3A0DF359831B7A923E0758004 /* ALSJSBridgeModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 03572EFFBA99C412D05916E0745095F8 /* ALSJSBridgeModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C56ABEC8E9AABD704FDE8348E20DEA5 /* H5AlisPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE1B088F3567078B5C85DBEAD0888B /* H5AlisPlugin.m */; };
+		3EC5AB06014FE79357CC42FA9310604A /* H5CommonPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3564174A74CD4CE9F7B426ABDFD33849 /* H5CommonPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4102B2BC6514D73912AEBDF4B7DD6143 /* AEJavaScriptHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F6E1D23D1D35AEDDD4726C6923252F /* AEJavaScriptHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FCD7AA10E4883B796229F107EF49B48 /* ALSJSBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C07934AF51DA1BB8C07CFAA1BD77 /* ALSJSBridgeModule.m */; };
+		4AABD115AE140827E8AE7B7494AF0CE2 /* H5CommonPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B45747342D628426978EB22D7FD26FFD /* H5CommonPlugin.m */; };
 		581955DD0F4B7E3ED6A5D8697A455B0A /* AEHybridLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 96400E7EA6208CBEA62AEE2784B699AC /* AEHybridLauncher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B37767EE6C2DD33723F6DD422661B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5E8AF3391321D1FB86DFE921B0DC8472 /* ALISJSBridgeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5AD7626CF72BB5D2A090ECA3D46498 /* ALISJSBridgeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64AB01A31E21A6614EA60D6AC68B3D88 /* AlisJSBridgeContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B301A9DBAEE40D497C0852EB523291F /* AlisJSBridgeContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67EFFBF5A7564BC8E5F211A6795419B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6922F498BE9B3C018313A6B29FCE1CEE /* Pods-ALISJSBridgeKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 357071FAE78CF16BEAAE6B697CA9DBCA /* Pods-ALISJSBridgeKit_Tests-dummy.m */; };
-		6DAF45DBFA901F8D87CBB008C70934A5 /* ALISJSBridgeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E38557D2D649921D7749E45315C7F4B /* ALISJSBridgeKit-dummy.m */; };
-		75502F9E9F3AA9BF5AD6EF9C584104C9 /* ALSJSBridgeModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B916ED190E01615AAA0C003583F1FFF /* ALSJSBridgeModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B157F161DA86230DFCBDDCCA93D4CBC /* ALSJSBridgeBasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D7072BF84C150EC23C757C95FE7F4A /* ALSJSBridgeBasePlugin.m */; };
+		6B7F98D3F7B2E5F333DC4ADA786167A0 /* AEHybridEngineManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B25FCBFA3F7CF3975E704712EA296A /* AEHybridEngineManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EF0915477018CF0F9C8564956AE2A98 /* H5JsApi4DemoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9F91ABFA3792DC620F01BE7BF5357B /* H5JsApi4DemoTest.m */; };
+		727AFD15077912D0D89F42121354390D /* AEHybridEngineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E98C8AEDEB1C44400155136814C2A9EB /* AEHybridEngineManager.m */; };
+		77AF2F5AFB537B4A3819FA9C7D6CCC33 /* H5WebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D0158C98081086FAB30237F415121D /* H5WebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DD5289546250B3D33730AFE6F5223FB /* APOpenSSL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB2EAA4B51DB750F329A495E56460E1 /* APOpenSSL-dummy.m */; };
 		8515C81452544533864053CCA4409384 /* AEHybridEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = C11C436A7E2E36F77BBE436E71912866 /* AEHybridEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87C4E68A86A3BA111FFAB90EBEB404A4 /* AEWebCookieStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9459866B8DF0203073CA7072B906005D /* AEWebCookieStorage.m */; };
-		8EE0785AFC0DE257B8A6E37A9802754E /* ALISJSBridgeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6450C651C7A960D5CA91252C2596D3 /* ALISJSBridgeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94D5A6574FA95AA3D43B16E4B60CF911 /* ALISBridgePluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9451E59F3B22646B4314E3057B5B32 /* ALISBridgePluginProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98DFBA9964F4D05F8674BD73ED0E8739 /* H5AlisPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 85361A60FA9289F87824D042D62C8EDF /* H5AlisPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		996D185F4476808950F38E6586F41870 /* AEHybridEngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8069F76EA83936C09BA2F921A897C07F /* AEHybridEngineViewController.m */; };
+		9B251C5CEFC2868B097D53B70AF9907C /* H5JsApi4DemoTest.h in Headers */ = {isa = PBXBuildFile; fileRef = D0EED72D97C3AF51452CD5BDD7F4E6F1 /* H5JsApi4DemoTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D8202B9F2582D91EC700E34B2A91AF0 /* H5CommonPlugin+AddJSApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F1A277199A83BC1372A10749A15D7E /* H5CommonPlugin+AddJSApi.m */; };
+		9EC99DF73D3F6D2D8557AC35FADF2634 /* NebulaSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57144207B8BCD975ECBD63067A18B531 /* NebulaSDKManager.m */; };
 		9F77225324E4B3DFBEAB9E4DD977EE63 /* AEHybridEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 816FB78DA523A6AAA746379F878D7624 /* AEHybridEngine-dummy.m */; };
+		A57A2B4E0AC647060A022B8048AE4FF8 /* H5CommonPlugin+AddJSApi.h in Headers */ = {isa = PBXBuildFile; fileRef = A14368BEA88507C729C1595D8941C830 /* H5CommonPlugin+AddJSApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B39E896EF4849B8BAAC9832494B2FD2B /* ALSJSBridgeModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFAF166D7C69473EC200E20B215671 /* ALSJSBridgeModuleManager.m */; };
 		C26FBE42EB1C82636591DCA7766FD50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C342219DB9728503827E7D3A7DED1277 /* NebulaSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF98212C210FD55E652B5041D929CDB /* NebulaSDK-dummy.m */; };
 		C5386998D991B9E7BE6EAE744A8DA014 /* AEJavaScriptHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CE737D08CB3BE792EC4ED6525625CF /* AEJavaScriptHandler.m */; };
+		C63AF1F477EE6D497A07F23324E027C4 /* ALISJSBridgeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049DFF58FCA7DB68180C3586D9E9F4F /* ALISJSBridgeKit-dummy.m */; };
 		C8DCFD5AAD93F7B66016620DFFF4CF11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CF14EFFCA97A05F65AAB80379A8131EF /* NebulaSDKPluginHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4F1FEDCE1EA2C648B4814D2749A73D /* NebulaSDKPluginHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFAF9F0AEEE11841AFF31CCDB62B0C28 /* ALSJSDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 473E3DD47532276911EE4966DFEAB589 /* ALSJSDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49719D0F319B875BAC2990E36FE66CF /* ALSJSBridgeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 044D0E725E2550C85BC1AA9ECF853952 /* ALSJSBridgeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6CF5EA8AED462B85D143C0CE4CA9CFB /* README in Sources */ = {isa = PBXBuildFile; fileRef = EBEA7E424807EF17BF35533F0A34C9FA /* README */; };
 		D777CB5DCF68B6417136F1E13D5B014F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D9D476F17DBEA22942EC477676940AE1 /* AEWebViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61811C70C1C161AF213D7E879CBD5C /* AEWebViewContainer.m */; };
-		E2154C1D7CC518FED9FBD8291B1290CD /* ALSJSBridgeModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAC221B461D2601DD8F3D1C1B1BC212 /* ALSJSBridgeModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3F649E7E4EF28A4AEB094B0F0F91942 /* ALISBridgePluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C18B0F3E23786B4BB3150D86C53D5E6D /* ALISBridgePluginProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED6657EBC415B6F0E52AEF28C5223767 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F21C1C5565CEE4E4D2B7B21B14E5BF57 /* ALSJSBridgeBasePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFB0B97719C7F98FC1C8DAD223DBAEE /* ALSJSBridgeBasePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F72A1DDF84925519E632FEC6AC4EEFE7 /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7061A05D5CFB8D48A45CEA29C3C79428 /* H5WebViewController.m */; };
+		FC819A6650CD988D302E7F312CDEA643 /* AlisJSBridgeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D533680BC00FE59BEF4159CD16CDC33 /* AlisJSBridgeContext.m */; };
+		FDFCD04189AAC7F4A2494A7EEE378AA7 /* ALSJSBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE848391ACA3D90F233C7D46FDED3E /* ALSJSBridgeModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +76,13 @@
 			remoteGlobalIDString = F37F4189C914035827E3C12180C6FEEF;
 			remoteInfo = AEHybridEngine;
 		};
+		2C2B980277AF26DA11F3AACFE7E49A4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F37F4189C914035827E3C12180C6FEEF;
+			remoteInfo = AEHybridEngine;
+		};
 		C88F2CE755A6C3CD94343DAAA2876188 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -68,71 +94,90 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6C009766F6B010B0EEB3215BD87F8066;
+			remoteGlobalIDString = F0583403B3869566842C1573B0B6CB49;
 			remoteInfo = ALISJSBridgeKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A9C51141EAF003E5B24C35E821077A6 /* ALSJSBridgeBasePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALSJSBridgeBasePlugin.h; path = ALISJSBridgeKit/Classes/ALSJSBridgeBasePlugin.h; sourceTree = "<group>"; };
+		03572EFFBA99C412D05916E0745095F8 /* ALSJSBridgeModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALSJSBridgeModuleManager.h; path = ALISJSBridgeKit/Classes/ALSJSBridge/ALSJSBridgeModuleManager.h; sourceTree = "<group>"; };
+		044D0E725E2550C85BC1AA9ECF853952 /* ALSJSBridgeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALSJSBridgeModule.h; path = ALISJSBridgeKit/Classes/ALSJSBridge/ALSJSBridgeModule.h; sourceTree = "<group>"; };
+		13BE1B088F3567078B5C85DBEAD0888B /* H5AlisPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = H5AlisPlugin.m; sourceTree = "<group>"; };
+		161527EEB205D9BCB604B1A6141EC066 /* NebulaSDKManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NebulaSDKManager.h; sourceTree = "<group>"; };
 		180692ACFCC45A6C07AA102B1F7FB2D9 /* libAEHybridEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAEHybridEngine.a; path = libAEHybridEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		192FCB7FF4633A61933EBA122C42DD76 /* Pods-ALISJSBridgeKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1EED05E9858666C411AEDCCC858E52C7 /* ALISJSBridgeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALISJSBridgeKit-prefix.pch"; sourceTree = "<group>"; };
+		1BFFAF166D7C69473EC200E20B215671 /* ALSJSBridgeModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALSJSBridgeModuleManager.m; path = ALISJSBridgeKit/Classes/ALSJSBridge/ALSJSBridgeModuleManager.m; sourceTree = "<group>"; };
+		1C5AD7626CF72BB5D2A090ECA3D46498 /* ALISJSBridgeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALISJSBridgeKit.h; path = ALISJSBridgeKit/Classes/ALSJSBridge/ALISJSBridgeKit.h; sourceTree = "<group>"; };
 		1FF904691D9D0A98C662AAA8174020A0 /* AEWebViewContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEWebViewContainer.h; path = Pod/Classes/AEWebViewContainer.h; sourceTree = "<group>"; };
 		2400F52A2CF219EA61CE5E996C6C2196 /* APOpenSSL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APOpenSSL.xcconfig; sourceTree = "<group>"; };
 		2AE10B596F7F1B5A2822BCD7CA79AAC9 /* Pods-ALISJSBridgeKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2B916ED190E01615AAA0C003583F1FFF /* ALSJSBridgeModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSBridgeModuleProtocol.h; sourceTree = "<group>"; };
 		2C6C0D599A35AE33A1830FD402F9D26B /* NebulaAppManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NebulaAppManager.bundle; path = NebulaSDK.framework/NebulaAppManager.bundle; sourceTree = "<group>"; };
 		2C72B9DC95FD5E579BA98FDF3B0A7114 /* Pods-ALISJSBridgeKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALISJSBridgeKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2D52541EABBFDCD7FA98817E2953A3A9 /* libNebulaSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libNebulaSDK.a; path = libNebulaSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D533680BC00FE59BEF4159CD16CDC33 /* AlisJSBridgeContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AlisJSBridgeContext.m; path = ALISJSBridgeKit/Classes/ALSJSBridgeBase/AlisJSBridgeContext.m; sourceTree = "<group>"; };
+		2FEE848391ACA3D90F233C7D46FDED3E /* ALSJSBridgeModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALSJSBridgeModule.m; path = ALISJSBridgeKit/Classes/ALSJSBridge/ALSJSBridgeModule.m; sourceTree = "<group>"; };
+		3049DFF58FCA7DB68180C3586D9E9F4F /* ALISJSBridgeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALISJSBridgeKit-dummy.m"; sourceTree = "<group>"; };
+		31B25FCBFA3F7CF3975E704712EA296A /* AEHybridEngineManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AEHybridEngineManager.h; sourceTree = "<group>"; };
 		34DE9275D2E1803976A5A7403F3E607E /* README */ = {isa = PBXFileReference; includeInIndex = 1; path = README; sourceTree = "<group>"; };
-		3506C07934AF51DA1BB8C07CFAA1BD77 /* ALSJSBridgeModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ALSJSBridgeModule.m; sourceTree = "<group>"; };
+		3564174A74CD4CE9F7B426ABDFD33849 /* H5CommonPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = H5CommonPlugin.h; sourceTree = "<group>"; };
 		357071FAE78CF16BEAAE6B697CA9DBCA /* Pods-ALISJSBridgeKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALISJSBridgeKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		41F08C5EBF703C2C7F53F8B0BFF8ECFE /* Pods-ALISJSBridgeKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALISJSBridgeKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		41F76491968CBE51C30C15BAC4B0E0C2 /* NebulaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NebulaSDK.framework; sourceTree = "<group>"; };
+		473E3DD47532276911EE4966DFEAB589 /* ALSJSDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALSJSDefine.h; path = ALISJSBridgeKit/Classes/ALSJSBridgeBase/ALSJSDefine.h; sourceTree = "<group>"; };
 		55BF535F9395B092D9C89FA8AEA0A52E /* NebulaPoseidon.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NebulaPoseidon.bundle; path = NebulaSDK.framework/NebulaPoseidon.bundle; sourceTree = "<group>"; };
 		56B44E8C5610A69CBF7FB34234FB5F55 /* libPods-ALISJSBridgeKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ALISJSBridgeKit_Tests.a"; path = "libPods-ALISJSBridgeKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FAC221B461D2601DD8F3D1C1B1BC212 /* ALSJSBridgeModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSBridgeModuleManager.h; sourceTree = "<group>"; };
+		57144207B8BCD975ECBD63067A18B531 /* NebulaSDKManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NebulaSDKManager.m; sourceTree = "<group>"; };
+		58AFC3B8469A4F6F76FA6CF2691BFF55 /* ALISJSBridgeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALISJSBridgeKit-prefix.pch"; sourceTree = "<group>"; };
+		5B301A9DBAEE40D497C0852EB523291F /* AlisJSBridgeContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlisJSBridgeContext.h; path = ALISJSBridgeKit/Classes/ALSJSBridgeBase/AlisJSBridgeContext.h; sourceTree = "<group>"; };
 		64793DE5D2CF0B63BD0D5D1CFC41F2D0 /* NebulaSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NebulaSDK-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6981E87A3DAEB7B62FE20C4647470DDD /* NebulaAppManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NebulaAppManager.framework; sourceTree = "<group>"; };
-		69D7072BF84C150EC23C757C95FE7F4A /* ALSJSBridgeBasePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALSJSBridgeBasePlugin.m; path = ALISJSBridgeKit/Classes/ALSJSBridgeBasePlugin.m; sourceTree = "<group>"; };
 		6BFEF7690F6C92308FADE20C55A714CF /* Pods-ALISJSBridgeKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALISJSBridgeKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6E38557D2D649921D7749E45315C7F4B /* ALISJSBridgeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALISJSBridgeKit-dummy.m"; sourceTree = "<group>"; };
 		6EB6C208140271F3C1263B432C5E203A /* AEHybridLauncher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEHybridLauncher.m; path = Pod/Classes/AEHybridLauncher.m; sourceTree = "<group>"; };
+		7061A05D5CFB8D48A45CEA29C3C79428 /* H5WebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = H5WebViewController.m; sourceTree = "<group>"; };
+		71F1A277199A83BC1372A10749A15D7E /* H5CommonPlugin+AddJSApi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "H5CommonPlugin+AddJSApi.m"; sourceTree = "<group>"; };
 		73CE737D08CB3BE792EC4ED6525625CF /* AEJavaScriptHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEJavaScriptHandler.m; path = Pod/Classes/AEJavaScriptHandler.m; sourceTree = "<group>"; };
 		764AFCEE55CB6C0958EC7133B823A958 /* Pods-ALISJSBridgeKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8069F76EA83936C09BA2F921A897C07F /* AEHybridEngineViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AEHybridEngineViewController.m; sourceTree = "<group>"; };
 		816FB78DA523A6AAA746379F878D7624 /* AEHybridEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEHybridEngine-dummy.m"; sourceTree = "<group>"; };
 		81ADD11E65FB3F018993580758FDB479 /* Pods-ALISJSBridgeKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		81C515F6FF19A6CC211C0C25D809FFE9 /* APOpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APOpenSSL.framework; sourceTree = "<group>"; };
-		86B2DF5B3CAA99A54CD76630B63E568F /* ALSJSBridgeModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ALSJSBridgeModuleManager.m; sourceTree = "<group>"; };
-		8B14266DE05D0AB8CCE91F92D8A28ACE /* ALSJSDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSDefine.h; sourceTree = "<group>"; };
+		85361A60FA9289F87824D042D62C8EDF /* H5AlisPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = H5AlisPlugin.h; sourceTree = "<group>"; };
+		8BC7FFA8A9FEF47E525499F20B063CFF /* AEHybridEngineViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AEHybridEngineViewController.h; sourceTree = "<group>"; };
 		8CA244EFBC0FADF3C99FF7D9481C937E /* NebulaSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NebulaSDK.xcconfig; sourceTree = "<group>"; };
+		8D4F1FEDCE1EA2C648B4814D2749A73D /* NebulaSDKPluginHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NebulaSDKPluginHeader.h; sourceTree = "<group>"; };
 		8EB66373B9A184E31E7F326C190EFBDC /* AEHybridEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEHybridEngine-prefix.pch"; sourceTree = "<group>"; };
 		8FA36275B88C6EC16986F53838A1C8C2 /* Pods-ALISJSBridgeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9459866B8DF0203073CA7072B906005D /* AEWebCookieStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEWebCookieStorage.m; path = Pod/Classes/AEWebCookieStorage.m; sourceTree = "<group>"; };
 		96400E7EA6208CBEA62AEE2784B699AC /* AEHybridLauncher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEHybridLauncher.h; path = Pod/Classes/AEHybridLauncher.h; sourceTree = "<group>"; };
-		9A9451E59F3B22646B4314E3057B5B32 /* ALISBridgePluginProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALISBridgePluginProtocol.h; path = ALISJSBridgeKit/Classes/ALISBridgePluginProtocol.h; sourceTree = "<group>"; };
+		990A068D1A91BF077DB07788B50A7D6D /* ALSJSBridgeModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALSJSBridgeModuleProtocol.h; path = ALISJSBridgeKit/Classes/ALSJSBridge/ALSJSBridgeModuleProtocol.h; sourceTree = "<group>"; };
+		99964EEB3828D1CB5F1473D0BF86A310 /* ALISJSBridgeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALISJSBridgeKit.xcconfig; sourceTree = "<group>"; };
 		9D61811C70C1C161AF213D7E879CBD5C /* AEWebViewContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEWebViewContainer.m; path = Pod/Classes/AEWebViewContainer.m; sourceTree = "<group>"; };
 		A0402B21F2636904443A1B54A8190F3E /* NebulaPoseidon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NebulaPoseidon.framework; sourceTree = "<group>"; };
+		A14368BEA88507C729C1595D8941C830 /* H5CommonPlugin+AddJSApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "H5CommonPlugin+AddJSApi.h"; sourceTree = "<group>"; };
 		A50F8B226CDD616FD0628AC3300355F7 /* libALISJSBridgeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libALISJSBridgeKit.a; path = libALISJSBridgeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFF21302B1223D2E2FE56A83F9FFD00 /* AEWebCookieStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEWebCookieStorage.h; path = Pod/Classes/AEWebCookieStorage.h; sourceTree = "<group>"; };
 		B424BB20713D35122C69F41A5DC309F6 /* Pods-ALISJSBridgeKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		B45747342D628426978EB22D7FD26FFD /* H5CommonPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = H5CommonPlugin.m; sourceTree = "<group>"; };
 		B963189CD58CEAC5194F3131ABAD86BB /* libAPOpenSSL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAPOpenSSL.a; path = libAPOpenSSL.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B982EF482F91D7EE7EFB18964EF2ED84 /* Pods-ALISJSBridgeKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALISJSBridgeKit_Example-dummy.m"; sourceTree = "<group>"; };
 		BA7730A7473419A3666F14794E17DE5C /* libPods-ALISJSBridgeKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ALISJSBridgeKit_Example.a"; path = "libPods-ALISJSBridgeKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11C436A7E2E36F77BBE436E71912866 /* AEHybridEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEHybridEngine.h; path = Pod/Classes/AEHybridEngine.h; sourceTree = "<group>"; };
+		C18B0F3E23786B4BB3150D86C53D5E6D /* ALISBridgePluginProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALISBridgePluginProtocol.h; path = ALISJSBridgeKit/Classes/ALSJSBridgeBase/ALISBridgePluginProtocol.h; sourceTree = "<group>"; };
 		C98ABAF423AC6746D14C45F7B709588F /* APOpenSSL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APOpenSSL-prefix.pch"; sourceTree = "<group>"; };
 		C9F6E1D23D1D35AEDDD4726C6923252F /* AEJavaScriptHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEJavaScriptHandler.h; path = Pod/Classes/AEJavaScriptHandler.h; sourceTree = "<group>"; };
+		CC9F91ABFA3792DC620F01BE7BF5357B /* H5JsApi4DemoTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = H5JsApi4DemoTest.m; sourceTree = "<group>"; };
 		CEB2EAA4B51DB750F329A495E56460E1 /* APOpenSSL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APOpenSSL-dummy.m"; sourceTree = "<group>"; };
 		D0DC155D5BF241F5C41BD05E64C93FFA /* Pods-ALISJSBridgeKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALISJSBridgeKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D0EED72D97C3AF51452CD5BDD7F4E6F1 /* H5JsApi4DemoTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = H5JsApi4DemoTest.h; sourceTree = "<group>"; };
 		D3DBEF570093B2A282C8D5D39E0588E9 /* Pods-ALISJSBridgeKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALISJSBridgeKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D8D0158C98081086FAB30237F415121D /* H5WebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = H5WebViewController.h; sourceTree = "<group>"; };
+		DBFB0B97719C7F98FC1C8DAD223DBAEE /* ALSJSBridgeBasePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALSJSBridgeBasePlugin.h; path = ALISJSBridgeKit/Classes/ALSJSBridgeBase/ALSJSBridgeBasePlugin.h; sourceTree = "<group>"; };
 		DEF98212C210FD55E652B5041D929CDB /* NebulaSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NebulaSDK-dummy.m"; sourceTree = "<group>"; };
-		EB6450C651C7A960D5CA91252C2596D3 /* ALISJSBridgeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALISJSBridgeKit.h; path = ALISJSBridgeKit/Classes/ALISJSBridgeKit.h; sourceTree = "<group>"; };
+		E8AB781BE00428EA39F848DF68DBE6AE /* ALSJSBridgeBasePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALSJSBridgeBasePlugin.m; path = ALISJSBridgeKit/Classes/ALSJSBridgeBase/ALSJSBridgeBasePlugin.m; sourceTree = "<group>"; };
+		E98C8AEDEB1C44400155136814C2A9EB /* AEHybridEngineManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AEHybridEngineManager.m; sourceTree = "<group>"; };
 		EBEA7E424807EF17BF35533F0A34C9FA /* README */ = {isa = PBXFileReference; includeInIndex = 1; path = README; sourceTree = "<group>"; };
-		EE4D66A07C8748FEA7EA7508E2570389 /* ALISJSBridgeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALISJSBridgeKit.xcconfig; sourceTree = "<group>"; };
-		F252D65FDBB54E23C759AE4FB1D2C52C /* ALSJSBridgeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ALSJSBridgeModule.h; sourceTree = "<group>"; };
 		F704B0CF22777AD632D85C9EA7B027AA /* AEHybridEngine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEHybridEngine.xcconfig; sourceTree = "<group>"; };
 		FB6E37860D093573CC2CE5678A84B3B5 /* NebulaSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NebulaSDK.bundle; path = NebulaSDK.framework/NebulaSDK.bundle; sourceTree = "<group>"; };
 		FB7F46BE869C87634B3566C301D76B76 /* Pods-ALISJSBridgeKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALISJSBridgeKit_Example-resources.sh"; sourceTree = "<group>"; };
@@ -171,19 +216,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		503032DAA6EAFEFA2FE1C5700C5C12B8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E08CCBBC0ED27272C2B21D454DCAEAB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		737C473AC639A9C1A4B851EC9B1E11FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C8DCFD5AAD93F7B66016620DFFF4CF11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA36AD605528A1A8713EFC5547313434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EFFBF5A7564BC8E5F211A6795419B9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,29 +246,27 @@
 			path = "../Target Support Files/AEHybridEngine";
 			sourceTree = "<group>";
 		};
-		134D721CC82D4F3F6401780E32185A0F /* Support Files */ = {
+		08F2BEF6FD08FF1A6C5D340DA4B0D196 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE4D66A07C8748FEA7EA7508E2570389 /* ALISJSBridgeKit.xcconfig */,
-				6E38557D2D649921D7749E45315C7F4B /* ALISJSBridgeKit-dummy.m */,
-				1EED05E9858666C411AEDCCC858E52C7 /* ALISJSBridgeKit-prefix.pch */,
+				99964EEB3828D1CB5F1473D0BF86A310 /* ALISJSBridgeKit.xcconfig */,
+				3049DFF58FCA7DB68180C3586D9E9F4F /* ALISJSBridgeKit-dummy.m */,
+				58AFC3B8469A4F6F76FA6CF2691BFF55 /* ALISJSBridgeKit-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ALISJSBridgeKit";
 			sourceTree = "<group>";
 		};
-		18EA57C8BC5E6AEDC0E091062B0C7342 /* ALISJSBridgeKit */ = {
+		133AD43D6F20678A409E34D1583D69E4 /* AEHybridEngine */ = {
 			isa = PBXGroup;
 			children = (
-				9A9451E59F3B22646B4314E3057B5B32 /* ALISBridgePluginProtocol.h */,
-				EB6450C651C7A960D5CA91252C2596D3 /* ALISJSBridgeKit.h */,
-				0A9C51141EAF003E5B24C35E821077A6 /* ALSJSBridgeBasePlugin.h */,
-				69D7072BF84C150EC23C757C95FE7F4A /* ALSJSBridgeBasePlugin.m */,
-				6258FE247A0810B4DE8F36C127FFF545 /* JSModules */,
-				134D721CC82D4F3F6401780E32185A0F /* Support Files */,
+				31B25FCBFA3F7CF3975E704712EA296A /* AEHybridEngineManager.h */,
+				E98C8AEDEB1C44400155136814C2A9EB /* AEHybridEngineManager.m */,
+				8BC7FFA8A9FEF47E525499F20B063CFF /* AEHybridEngineViewController.h */,
+				8069F76EA83936C09BA2F921A897C07F /* AEHybridEngineViewController.m */,
 			);
-			name = ALISJSBridgeKit;
-			path = ../..;
+			name = AEHybridEngine;
+			path = ALISJSBridgeKit/Classes/ALSJSBridgePlugins/AEHybridEngine;
 			sourceTree = "<group>";
 		};
 		1F2CCD8FF7459A8501DF849E66A284CD /* Resources */ = {
@@ -245,12 +288,47 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		531F5ABF4BEA4C4E7130A4EF0E7B618D /* Development Pods */ = {
+		31118FBF6393C675783E7EDC0A7079A6 /* NebulaSDK */ = {
 			isa = PBXGroup;
 			children = (
-				18EA57C8BC5E6AEDC0E091062B0C7342 /* ALISJSBridgeKit */,
+				85361A60FA9289F87824D042D62C8EDF /* H5AlisPlugin.h */,
+				13BE1B088F3567078B5C85DBEAD0888B /* H5AlisPlugin.m */,
+				D0EED72D97C3AF51452CD5BDD7F4E6F1 /* H5JsApi4DemoTest.h */,
+				CC9F91ABFA3792DC620F01BE7BF5357B /* H5JsApi4DemoTest.m */,
+				D8D0158C98081086FAB30237F415121D /* H5WebViewController.h */,
+				7061A05D5CFB8D48A45CEA29C3C79428 /* H5WebViewController.m */,
+				161527EEB205D9BCB604B1A6141EC066 /* NebulaSDKManager.h */,
+				57144207B8BCD975ECBD63067A18B531 /* NebulaSDKManager.m */,
+				8D4F1FEDCE1EA2C648B4814D2749A73D /* NebulaSDKPluginHeader.h */,
+				EFB5C211FBCD5F5BB7C964DFCF2EB468 /* DemoH5 */,
 			);
-			name = "Development Pods";
+			name = NebulaSDK;
+			path = ALISJSBridgeKit/Classes/ALSJSBridgePlugins/NebulaSDK;
+			sourceTree = "<group>";
+		};
+		3E4CB4FB2A020759BDD2C87904BCD216 /* ALSJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				1C5AD7626CF72BB5D2A090ECA3D46498 /* ALISJSBridgeKit.h */,
+				044D0E725E2550C85BC1AA9ECF853952 /* ALSJSBridgeModule.h */,
+				2FEE848391ACA3D90F233C7D46FDED3E /* ALSJSBridgeModule.m */,
+				03572EFFBA99C412D05916E0745095F8 /* ALSJSBridgeModuleManager.h */,
+				1BFFAF166D7C69473EC200E20B215671 /* ALSJSBridgeModuleManager.m */,
+				990A068D1A91BF077DB07788B50A7D6D /* ALSJSBridgeModuleProtocol.h */,
+			);
+			name = ALSJSBridge;
+			sourceTree = "<group>";
+		};
+		515D5FCACA2951BEA7EB1A377B4C80F4 /* ALISJSBridgeKit */ = {
+			isa = PBXGroup;
+			children = (
+				3E4CB4FB2A020759BDD2C87904BCD216 /* ALSJSBridge */,
+				5CBBCCCC5ED4B8F81065B11375B7CA01 /* ALSJSBridgeBase */,
+				F9AB058402C81E931377CA3580D0CD9D /* ALSJSBridgePlugins */,
+				08F2BEF6FD08FF1A6C5D340DA4B0D196 /* Support Files */,
+			);
+			name = ALISJSBridgeKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		5B99FBB123BC3ED6C68F0E5378A7FC8D /* NebulaSDK */ = {
@@ -265,6 +343,19 @@
 			path = NebulaSDK;
 			sourceTree = "<group>";
 		};
+		5CBBCCCC5ED4B8F81065B11375B7CA01 /* ALSJSBridgeBase */ = {
+			isa = PBXGroup;
+			children = (
+				C18B0F3E23786B4BB3150D86C53D5E6D /* ALISBridgePluginProtocol.h */,
+				5B301A9DBAEE40D497C0852EB523291F /* AlisJSBridgeContext.h */,
+				2D533680BC00FE59BEF4159CD16CDC33 /* AlisJSBridgeContext.m */,
+				DBFB0B97719C7F98FC1C8DAD223DBAEE /* ALSJSBridgeBasePlugin.h */,
+				E8AB781BE00428EA39F848DF68DBE6AE /* ALSJSBridgeBasePlugin.m */,
+				473E3DD47532276911EE4966DFEAB589 /* ALSJSDefine.h */,
+			);
+			name = ALSJSBridgeBase;
+			sourceTree = "<group>";
+		};
 		623B806517D70645D39607CF379F2B26 /* APOpenSSL */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,20 +365,6 @@
 			);
 			name = APOpenSSL;
 			path = APOpenSSL;
-			sourceTree = "<group>";
-		};
-		6258FE247A0810B4DE8F36C127FFF545 /* JSModules */ = {
-			isa = PBXGroup;
-			children = (
-				F252D65FDBB54E23C759AE4FB1D2C52C /* ALSJSBridgeModule.h */,
-				3506C07934AF51DA1BB8C07CFAA1BD77 /* ALSJSBridgeModule.m */,
-				5FAC221B461D2601DD8F3D1C1B1BC212 /* ALSJSBridgeModuleManager.h */,
-				86B2DF5B3CAA99A54CD76630B63E568F /* ALSJSBridgeModuleManager.m */,
-				2B916ED190E01615AAA0C003583F1FFF /* ALSJSBridgeModuleProtocol.h */,
-				8B14266DE05D0AB8CCE91F92D8A28ACE /* ALSJSDefine.h */,
-			);
-			name = JSModules;
-			path = ALISJSBridgeKit/Classes/JSModules;
 			sourceTree = "<group>";
 		};
 		7B50A10103E0C32418E4279C6FADBC70 /* Pods */ = {
@@ -304,7 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				531F5ABF4BEA4C4E7130A4EF0E7B618D /* Development Pods */,
+				A67D62C62762E82BCE2D8701A661CCA9 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				7B50A10103E0C32418E4279C6FADBC70 /* Pods */,
 				F86937616D62E506D8FB5B0F22608296 /* Products */,
@@ -342,6 +419,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/NebulaSDK";
+			sourceTree = "<group>";
+		};
+		A67D62C62762E82BCE2D8701A661CCA9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				515D5FCACA2951BEA7EB1A377B4C80F4 /* ALISJSBridgeKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		A70ADF059B08540B7A6326DDCB430DE3 /* Frameworks */ = {
@@ -401,6 +486,18 @@
 			path = "Target Support Files/Pods-ALISJSBridgeKit_Example";
 			sourceTree = "<group>";
 		};
+		EFB5C211FBCD5F5BB7C964DFCF2EB468 /* DemoH5 */ = {
+			isa = PBXGroup;
+			children = (
+				3564174A74CD4CE9F7B426ABDFD33849 /* H5CommonPlugin.h */,
+				B45747342D628426978EB22D7FD26FFD /* H5CommonPlugin.m */,
+				A14368BEA88507C729C1595D8941C830 /* H5CommonPlugin+AddJSApi.h */,
+				71F1A277199A83BC1372A10749A15D7E /* H5CommonPlugin+AddJSApi.m */,
+			);
+			name = DemoH5;
+			path = DemoH5;
+			sourceTree = "<group>";
+		};
 		F749934F0EC6BB45E9672FD2568ACB5B /* Pods-ALISJSBridgeKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,20 +526,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F9AB058402C81E931377CA3580D0CD9D /* ALSJSBridgePlugins */ = {
+			isa = PBXGroup;
+			children = (
+				133AD43D6F20678A409E34D1583D69E4 /* AEHybridEngine */,
+				31118FBF6393C675783E7EDC0A7079A6 /* NebulaSDK */,
+			);
+			name = ALSJSBridgePlugins;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		62B5BCEF030F055296B14EDE75559303 /* Headers */ = {
+		3DE1C21B49384B0B11F41883B2EE42C2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94D5A6574FA95AA3D43B16E4B60CF911 /* ALISBridgePluginProtocol.h in Headers */,
-				8EE0785AFC0DE257B8A6E37A9802754E /* ALISJSBridgeKit.h in Headers */,
-				24ED64C9E926ECA2A9F4E38A2132122C /* ALSJSBridgeBasePlugin.h in Headers */,
-				3765C017D663364A119E6CAA9051BBB3 /* ALSJSBridgeModule.h in Headers */,
-				E2154C1D7CC518FED9FBD8291B1290CD /* ALSJSBridgeModuleManager.h in Headers */,
-				75502F9E9F3AA9BF5AD6EF9C584104C9 /* ALSJSBridgeModuleProtocol.h in Headers */,
-				36C5EC58277F3FEFD49C8FA78DDED738 /* ALSJSDefine.h in Headers */,
+				6B7F98D3F7B2E5F333DC4ADA786167A0 /* AEHybridEngineManager.h in Headers */,
+				172DFF057CA8F77B31EE6A61A78958AC /* AEHybridEngineViewController.h in Headers */,
+				E3F649E7E4EF28A4AEB094B0F0F91942 /* ALISBridgePluginProtocol.h in Headers */,
+				64AB01A31E21A6614EA60D6AC68B3D88 /* AlisJSBridgeContext.h in Headers */,
+				5E8AF3391321D1FB86DFE921B0DC8472 /* ALISJSBridgeKit.h in Headers */,
+				F21C1C5565CEE4E4D2B7B21B14E5BF57 /* ALSJSBridgeBasePlugin.h in Headers */,
+				D49719D0F319B875BAC2990E36FE66CF /* ALSJSBridgeModule.h in Headers */,
+				3595E7F3A0DF359831B7A923E0758004 /* ALSJSBridgeModuleManager.h in Headers */,
+				1065132DB62E0705B3C6DA90162E1BF3 /* ALSJSBridgeModuleProtocol.h in Headers */,
+				CFAF9F0AEEE11841AFF31CCDB62B0C28 /* ALSJSDefine.h in Headers */,
+				98DFBA9964F4D05F8674BD73ED0E8739 /* H5AlisPlugin.h in Headers */,
+				A57A2B4E0AC647060A022B8048AE4FF8 /* H5CommonPlugin+AddJSApi.h in Headers */,
+				3EC5AB06014FE79357CC42FA9310604A /* H5CommonPlugin.h in Headers */,
+				9B251C5CEFC2868B097D53B70AF9907C /* H5JsApi4DemoTest.h in Headers */,
+				77AF2F5AFB537B4A3819FA9C7D6CCC33 /* H5WebViewController.h in Headers */,
+				02A620428225CE4C87E49D914358AA13 /* NebulaSDKManager.h in Headers */,
+				CF14EFFCA97A05F65AAB80379A8131EF /* NebulaSDKPluginHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,23 +597,6 @@
 			productReference = BA7730A7473419A3666F14794E17DE5C /* libPods-ALISJSBridgeKit_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		6C009766F6B010B0EEB3215BD87F8066 /* ALISJSBridgeKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F31F5D5A8BFC01509265E1C513ED990 /* Build configuration list for PBXNativeTarget "ALISJSBridgeKit" */;
-			buildPhases = (
-				E88636A9F6B306D279BC4FECA7E4B839 /* Sources */,
-				503032DAA6EAFEFA2FE1C5700C5C12B8 /* Frameworks */,
-				62B5BCEF030F055296B14EDE75559303 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ALISJSBridgeKit;
-			productName = ALISJSBridgeKit;
-			productReference = A50F8B226CDD616FD0628AC3300355F7 /* libALISJSBridgeKit.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		7BE4B724CD14638E04C1DFFB37FA4807 /* NebulaSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4BF06A590C400CDDE2E8B2B70B0C92F /* Build configuration list for PBXNativeTarget "NebulaSDK" */;
@@ -528,6 +627,24 @@
 			name = APOpenSSL;
 			productName = APOpenSSL;
 			productReference = B963189CD58CEAC5194F3131ABAD86BB /* libAPOpenSSL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F0583403B3869566842C1573B0B6CB49 /* ALISJSBridgeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8C065E4AB4E72447021B947321465F /* Build configuration list for PBXNativeTarget "ALISJSBridgeKit" */;
+			buildPhases = (
+				F0BE943DB661AF6D8802F8442F7804A4 /* Sources */,
+				EA36AD605528A1A8713EFC5547313434 /* Frameworks */,
+				3DE1C21B49384B0B11F41883B2EE42C2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91E3C60D9D2FD24081C3087EB8511657 /* PBXTargetDependency */,
+			);
+			name = ALISJSBridgeKit;
+			productName = ALISJSBridgeKit;
+			productReference = A50F8B226CDD616FD0628AC3300355F7 /* libALISJSBridgeKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		F1DC305F57A25B36F9E4641AB1AC9FFE /* Pods-ALISJSBridgeKit_Tests */ = {
@@ -585,7 +702,7 @@
 			projectRoot = "";
 			targets = (
 				F37F4189C914035827E3C12180C6FEEF /* AEHybridEngine */,
-				6C009766F6B010B0EEB3215BD87F8066 /* ALISJSBridgeKit */,
+				F0583403B3869566842C1573B0B6CB49 /* ALISJSBridgeKit */,
 				9E28FAC0E2E6D988CCFD488FB5DF34B0 /* APOpenSSL */,
 				7BE4B724CD14638E04C1DFFB37FA4807 /* NebulaSDK */,
 				531B0F0EA7E0F8456AC5A5A68A054FB2 /* Pods-ALISJSBridgeKit_Example */,
@@ -641,14 +758,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E88636A9F6B306D279BC4FECA7E4B839 /* Sources */ = {
+		F0BE943DB661AF6D8802F8442F7804A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAF45DBFA901F8D87CBB008C70934A5 /* ALISJSBridgeKit-dummy.m in Sources */,
-				7B157F161DA86230DFCBDDCCA93D4CBC /* ALSJSBridgeBasePlugin.m in Sources */,
-				4FCD7AA10E4883B796229F107EF49B48 /* ALSJSBridgeModule.m in Sources */,
-				0DAEE0D96D9C325022E4B2DF06F2FD7D /* ALSJSBridgeModuleManager.m in Sources */,
+				727AFD15077912D0D89F42121354390D /* AEHybridEngineManager.m in Sources */,
+				996D185F4476808950F38E6586F41870 /* AEHybridEngineViewController.m in Sources */,
+				FC819A6650CD988D302E7F312CDEA643 /* AlisJSBridgeContext.m in Sources */,
+				C63AF1F477EE6D497A07F23324E027C4 /* ALISJSBridgeKit-dummy.m in Sources */,
+				0A250115C829EFABB0B82E5D96B4672E /* ALSJSBridgeBasePlugin.m in Sources */,
+				FDFCD04189AAC7F4A2494A7EEE378AA7 /* ALSJSBridgeModule.m in Sources */,
+				B39E896EF4849B8BAAC9832494B2FD2B /* ALSJSBridgeModuleManager.m in Sources */,
+				3C56ABEC8E9AABD704FDE8348E20DEA5 /* H5AlisPlugin.m in Sources */,
+				9D8202B9F2582D91EC700E34B2A91AF0 /* H5CommonPlugin+AddJSApi.m in Sources */,
+				4AABD115AE140827E8AE7B7494AF0CE2 /* H5CommonPlugin.m in Sources */,
+				6EF0915477018CF0F9C8564956AE2A98 /* H5JsApi4DemoTest.m in Sources */,
+				F72A1DDF84925519E632FEC6AC4EEFE7 /* H5WebViewController.m in Sources */,
+				9EC99DF73D3F6D2D8557AC35FADF2634 /* NebulaSDKManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +786,12 @@
 			name = APOpenSSL;
 			target = 9E28FAC0E2E6D988CCFD488FB5DF34B0 /* APOpenSSL */;
 			targetProxy = 05FD87160B5094C0C5D36FD993627D92 /* PBXContainerItemProxy */;
+		};
+		91E3C60D9D2FD24081C3087EB8511657 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AEHybridEngine;
+			target = F37F4189C914035827E3C12180C6FEEF /* AEHybridEngine */;
+			targetProxy = 2C2B980277AF26DA11F3AACFE7E49A4A /* PBXContainerItemProxy */;
 		};
 		AF39738B8AF457615B03945632D93A76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -676,7 +808,7 @@
 		F303A5A16D0F86E556D889A94645B192 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ALISJSBridgeKit;
-			target = 6C009766F6B010B0EEB3215BD87F8066 /* ALISJSBridgeKit */;
+			target = F0583403B3869566842C1573B0B6CB49 /* ALISJSBridgeKit */;
 			targetProxy = E2587C55620EE412AD9FE4D6829CC366 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -744,28 +876,6 @@
 			};
 			name = Release;
 		};
-		6BB33D9546BB777E8B9CBFE34F865B8D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE4D66A07C8748FEA7EA7508E2570389 /* ALISJSBridgeKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ALISJSBridgeKit/ALISJSBridgeKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -818,6 +928,28 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		717F97E63DE1EBC06E2AA2492E1B5164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99964EEB3828D1CB5F1473D0BF86A310 /* ALISJSBridgeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ALISJSBridgeKit/ALISJSBridgeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -944,27 +1076,6 @@
 			};
 			name = Debug;
 		};
-		C611FEBBAD79FA6EC9AFE6B878A2B670 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE4D66A07C8748FEA7EA7508E2570389 /* ALISJSBridgeKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ALISJSBridgeKit/ALISJSBridgeKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		CD66E3F722CAB3B537D684DCFAEA9387 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8CA244EFBC0FADF3C99FF7D9481C937E /* NebulaSDK.xcconfig */;
@@ -986,6 +1097,27 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		DB36D0A6235C88DDD8E7D1BBD2211A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99964EEB3828D1CB5F1473D0BF86A310 /* ALISJSBridgeKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ALISJSBridgeKit/ALISJSBridgeKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		DFD5383038BA36F0CACA229D33A4BB46 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1063,15 +1195,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F31F5D5A8BFC01509265E1C513ED990 /* Build configuration list for PBXNativeTarget "ALISJSBridgeKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C611FEBBAD79FA6EC9AFE6B878A2B670 /* Debug */,
-				6BB33D9546BB777E8B9CBFE34F865B8D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4991E3A8BB72065330EFF5FC9A7D478B /* Build configuration list for PBXNativeTarget "Pods-ALISJSBridgeKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1086,6 +1209,15 @@
 			buildConfigurations = (
 				E9580F31B03A77568385F3C3B64FC715 /* Debug */,
 				DFD5383038BA36F0CACA229D33A4BB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8C065E4AB4E72447021B947321465F /* Build configuration list for PBXNativeTarget "ALISJSBridgeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB36D0A6235C88DDD8E7D1BBD2211A1F /* Debug */,
+				717F97E63DE1EBC06E2AA2492E1B5164 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

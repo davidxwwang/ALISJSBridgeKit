@@ -6,9 +6,11 @@
 //  Copyright © 2016年 Alipay. All rights reserved.
 //
 
-#import <NebulaSDK/NebulaSDK.h>
-#import <NebulaSDK/NBPluginBase.h>
+#import "NebulaSDKPluginHeader.h"
 
+#ifdef ALS_HAS_NebulaSDK 
 @interface H5JsApi4DemoTest : PSDJsApiHandler
 
 @end
+
+#endif

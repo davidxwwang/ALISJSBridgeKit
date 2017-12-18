@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALISJSBridgeKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '阿里体育JavaScriptBridge'
 
 # This description is used to generate tags and improve search results.
@@ -28,16 +28,24 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/davidxwwang/ALISJSBridgeKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ALISJSBridgeKit/Classes/**/*'
-  
-  
-  # s.resource_bundles = {
-  #   'ALISJSBridgeKit' => ['ALISJSBridgeKit/Assets/*.png']
-  # }
+  s.subspec 'ALSJSBridgeBase' do |cs|
+    cs.source_files  = 'ALISJSBridgeKit/Classes/ALSJSBridgeBase/**/*'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'ALSJSBridge' do |cs|
+    cs.source_files  = 'ALISJSBridgeKit/Classes/ALSJSBridge/**/*'
+    cs.dependency 'ALISJSBridgeKit/ALSJSBridgeBase'
+  end
+  
+  s.subspec 'ALSJSBridgePlugins' do |cs|
+    cs.source_files  = 'ALISJSBridgeKit/Classes/ALSJSBridgePlugins/**/*'
+    cs.dependency 'ALISJSBridgeKit/ALSJSBridgeBase'
+    
+#cs.dependency 'NebulaSDK'
+#    cs.dependency 'APOpenSSL'
+    cs.dependency 'AEHybridEngine'
+  end
+ 
 end

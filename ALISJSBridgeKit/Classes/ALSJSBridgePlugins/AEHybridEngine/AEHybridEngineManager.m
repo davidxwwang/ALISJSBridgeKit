@@ -5,7 +5,7 @@
 //  Created by alisports on 2017/11/27.
 //  Copyright © 2017年 xwwang_0102@qq.com. All rights reserved.
 //
-
+#import "AlisJSBridgeContext.h"
 #import "AEHybridEngineManager.h"
 #import "AEHybridEngineViewController.h"
 
@@ -17,8 +17,9 @@
 @end
 
 @implementation AEHybridEngineManager
-
-JSSDKPLUGIN_EXPORT_MODULE();
+#if __has_include(<ALISJSBridgeKit/ALISJSBridgeKit.h>)
+    JSSDKPLUGIN_EXPORT_MODULE();
+#endif
 
 - (instancetype)init{
     if (self = [super init]) {

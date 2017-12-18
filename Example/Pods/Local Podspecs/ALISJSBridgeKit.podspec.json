@@ -16,7 +16,33 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "ALISJSBridgeKit/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "ALSJSBridgeBase",
+      "source_files": "ALISJSBridgeKit/Classes/ALSJSBridgeBase/**/*"
+    },
+    {
+      "name": "ALSJSBridge",
+      "source_files": "ALISJSBridgeKit/Classes/ALSJSBridge/**/*",
+      "dependencies": {
+        "ALISJSBridgeKit/ALSJSBridgeBase": [
+
+        ]
+      }
+    },
+    {
+      "name": "ALSJSBridgePlugins",
+      "source_files": "ALISJSBridgeKit/Classes/ALSJSBridgePlugins/**/*",
+      "dependencies": {
+        "ALISJSBridgeKit/ALSJSBridgeBase": [
+
+        ],
+        "AEHybridEngine": [
+
+        ]
+      }
+    }
+  ]
 }

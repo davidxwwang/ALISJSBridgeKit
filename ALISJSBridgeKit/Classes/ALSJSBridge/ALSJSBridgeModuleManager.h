@@ -9,14 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ALSJSBridgeModule.h"
 
-@interface AlisJSBridgeContext : NSObject
-//原始数据
-@property(strong , nonatomic) id orignalData;
-@property(strong , nonatomic) id context;
-@property(strong , nonatomic) NSString *JSApiName;
-
-@end
-
 @interface ALSJSBridgeModuleManager : NSObject
 
 + (instancetype)sharedBridge;

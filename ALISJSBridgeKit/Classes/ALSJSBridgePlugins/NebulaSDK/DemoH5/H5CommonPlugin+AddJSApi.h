@@ -8,6 +8,10 @@
 
 #import "H5CommonPlugin.h"
 
+#ifdef ALS_HAS_NebulaSDK
+
 @interface H5CommonPlugin (AddJSApi)
 
 @end
+
+#endif

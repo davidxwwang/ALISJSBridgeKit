@@ -22,14 +22,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6306CA661FCBE43800695BE9 /* AEHybridEngineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306CA651FCBE43800695BE9 /* AEHybridEngineViewController.m */; };
-		6306CA691FCBE62700695BE9 /* AEHybridEngineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306CA681FCBE62700695BE9 /* AEHybridEngineManager.m */; };
-		632384921FC3D6E0003D153C /* H5JsApi4DemoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 632384851FC3D6DE003D153C /* H5JsApi4DemoTest.m */; };
-		632384931FC3D6E0003D153C /* H5AlisPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 632384861FC3D6DE003D153C /* H5AlisPlugin.m */; };
-		632384941FC3D6E0003D153C /* NebulaSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 632384881FC3D6DF003D153C /* NebulaSDKManager.m */; };
-		632384951FC3D6E0003D153C /* H5CommonPlugin+AddJSApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */; };
-		632384961FC3D6E0003D153C /* H5CommonPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323848D1FC3D6DF003D153C /* H5CommonPlugin.m */; };
-		632384971FC3D6E0003D153C /* H5WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323848F1FC3D6DF003D153C /* H5WebViewController.m */; };
 		632384991FC3D7A9003D153C /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 632384981FC3D7A9003D153C /* libz.1.2.8.tbd */; };
 		6323849B1FC3D7B1003D153C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6323849A1FC3D7B1003D153C /* WebKit.framework */; };
 		6323849D1FC3D7B7003D153C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6323849C1FC3D7B7003D153C /* JavaScriptCore.framework */; };
@@ -76,22 +68,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6306CA641FCBE43800695BE9 /* AEHybridEngineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEHybridEngineViewController.h; sourceTree = "<group>"; };
-		6306CA651FCBE43800695BE9 /* AEHybridEngineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEHybridEngineViewController.m; sourceTree = "<group>"; };
-		6306CA671FCBE62700695BE9 /* AEHybridEngineManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEHybridEngineManager.h; sourceTree = "<group>"; };
-		6306CA681FCBE62700695BE9 /* AEHybridEngineManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEHybridEngineManager.m; sourceTree = "<group>"; };
-		632384851FC3D6DE003D153C /* H5JsApi4DemoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5JsApi4DemoTest.m; sourceTree = "<group>"; };
-		632384861FC3D6DE003D153C /* H5AlisPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5AlisPlugin.m; sourceTree = "<group>"; };
-		632384871FC3D6DE003D153C /* NebulaSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NebulaSDKManager.h; sourceTree = "<group>"; };
-		632384881FC3D6DF003D153C /* NebulaSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NebulaSDKManager.m; sourceTree = "<group>"; };
-		6323848A1FC3D6DF003D153C /* H5CommonPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5CommonPlugin.h; sourceTree = "<group>"; };
-		6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "H5CommonPlugin+AddJSApi.m"; sourceTree = "<group>"; };
-		6323848C1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "H5CommonPlugin+AddJSApi.h"; sourceTree = "<group>"; };
-		6323848D1FC3D6DF003D153C /* H5CommonPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5CommonPlugin.m; sourceTree = "<group>"; };
-		6323848E1FC3D6DF003D153C /* H5AlisPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5AlisPlugin.h; sourceTree = "<group>"; };
-		6323848F1FC3D6DF003D153C /* H5WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5WebViewController.m; sourceTree = "<group>"; };
-		632384901FC3D6DF003D153C /* H5WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5WebViewController.h; sourceTree = "<group>"; };
-		632384911FC3D6E0003D153C /* H5JsApi4DemoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5JsApi4DemoTest.h; sourceTree = "<group>"; };
 		632384981FC3D7A9003D153C /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
 		6323849A1FC3D7B1003D153C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6323849C1FC3D7B7003D153C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -198,8 +174,6 @@
 		6003F593195388D20070C39A /* Example for ALISJSBridgeKit */ = {
 			isa = PBXGroup;
 			children = (
-				6306CA631FCBC3E100695BE9 /* AEHybridEngineSDKPlugin */,
-				632384841FC3D6CB003D153C /* NebulaSDKPlugin */,
 				6003F59C195388D20070C39A /* ALISAppDelegate.h */,
 				6003F59D195388D20070C39A /* ALISAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -252,44 +226,6 @@
 				AF00279CBEBBCE852D78E6EE /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		6306CA631FCBC3E100695BE9 /* AEHybridEngineSDKPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				6306CA641FCBE43800695BE9 /* AEHybridEngineViewController.h */,
-				6306CA651FCBE43800695BE9 /* AEHybridEngineViewController.m */,
-				6306CA671FCBE62700695BE9 /* AEHybridEngineManager.h */,
-				6306CA681FCBE62700695BE9 /* AEHybridEngineManager.m */,
-			);
-			name = AEHybridEngineSDKPlugin;
-			sourceTree = "<group>";
-		};
-		632384841FC3D6CB003D153C /* NebulaSDKPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				632384891FC3D6DF003D153C /* DemoH5 */,
-				6323848E1FC3D6DF003D153C /* H5AlisPlugin.h */,
-				632384861FC3D6DE003D153C /* H5AlisPlugin.m */,
-				632384911FC3D6E0003D153C /* H5JsApi4DemoTest.h */,
-				632384851FC3D6DE003D153C /* H5JsApi4DemoTest.m */,
-				632384901FC3D6DF003D153C /* H5WebViewController.h */,
-				6323848F1FC3D6DF003D153C /* H5WebViewController.m */,
-				632384871FC3D6DE003D153C /* NebulaSDKManager.h */,
-				632384881FC3D6DF003D153C /* NebulaSDKManager.m */,
-			);
-			name = NebulaSDKPlugin;
-			sourceTree = "<group>";
-		};
-		632384891FC3D6DF003D153C /* DemoH5 */ = {
-			isa = PBXGroup;
-			children = (
-				6323848A1FC3D6DF003D153C /* H5CommonPlugin.h */,
-				6323848D1FC3D6DF003D153C /* H5CommonPlugin.m */,
-				6323848C1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.h */,
-				6323848B1FC3D6DF003D153C /* H5CommonPlugin+AddJSApi.m */,
-			);
-			path = DemoH5;
 			sourceTree = "<group>";
 		};
 		A8086AFCFBCC99FAF937FE24 /* Pods */ = {
@@ -528,17 +464,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632384961FC3D6E0003D153C /* H5CommonPlugin.m in Sources */,
 				6003F59E195388D20070C39A /* ALISAppDelegate.m in Sources */,
-				6306CA661FCBE43800695BE9 /* AEHybridEngineViewController.m in Sources */,
-				632384941FC3D6E0003D153C /* NebulaSDKManager.m in Sources */,
 				6003F5A7195388D20070C39A /* ALISViewController.m in Sources */,
-				632384951FC3D6E0003D153C /* H5CommonPlugin+AddJSApi.m in Sources */,
-				632384931FC3D6E0003D153C /* H5AlisPlugin.m in Sources */,
-				6306CA691FCBE62700695BE9 /* AEHybridEngineManager.m in Sources */,
-				632384921FC3D6E0003D153C /* H5JsApi4DemoTest.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				632384971FC3D6E0003D153C /* H5WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

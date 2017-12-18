@@ -8,6 +8,7 @@
 #import "NebulaSDKManager.h"
 #import "H5JsApi4DemoTest.h"
 // 该JSApi已在Poseidon-Extra-Config.plist中注册
+#ifdef ALS_HAS_NebulaSDK 
 
 @implementation H5JsApi4DemoTest
 
@@ -31,3 +32,5 @@
 }
 
 @end
+
+#endif

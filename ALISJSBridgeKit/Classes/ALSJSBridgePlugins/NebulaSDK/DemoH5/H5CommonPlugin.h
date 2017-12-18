@@ -5,14 +5,17 @@
 //  Created by alisports on 2017/11/2.
 //  Copyright © 2017年 alisports. All rights reserved.
 //
-#import <NebulaSDK/NebulaSDK.h>
-#import <NebulaSDK/NBPluginBase.h>
+#import "NebulaSDKPluginHeader.h"
+
 #import <Foundation/Foundation.h>
 #import "NebulaSDKManager.h"
 
+#ifdef ALS_HAS_NebulaSDK 
 // 通过- (void)addJSApi:(NSString *)name handler:(AlisJSApiHandlerBlock)handler;添加的JS方法
 @interface H5CommonPlugin : NBPluginBase
 
 @property(weak , nonatomic)NebulaSDKManager *manager;
 
 @end
+
+#endif

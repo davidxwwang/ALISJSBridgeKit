@@ -1,1 +1,1 @@
-../../../../../ALISJSBridgeKit/Classes/ALISJSBridgeKit.h
+../../../../../ALISJSBridgeKit/Classes/ALSJSBridge/ALISJSBridgeKit.h

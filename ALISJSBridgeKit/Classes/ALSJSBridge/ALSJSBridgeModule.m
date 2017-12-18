@@ -5,7 +5,7 @@
 //  Created by alisports on 2017/11/15.
 //  Copyright © 2017年 alisports.sportsman. All rights reserved.
 //
-
+#import "AlisJSBridgeContext.h"
 #import "ALSJSBridgeModule.h"
 #import "ALSJSBridgeModuleManager.h"
 

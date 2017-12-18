@@ -7,7 +7,6 @@
 //
 #import "NebulaSDKManager.h"
 #import "H5AlisPlugin.h"
-//#import "NebulaSDKManager.h"
 
 //跳转
 #define JSCall_MakeSegue                 (@"alisMakeSegue")
@@ -50,9 +49,12 @@
 //获取城市信息
 #define JSCall_GetCurrentLocation (@"alisGetCurrentLocation")
 
+#ifdef ALS_HAS_NebulaSDK
 // 该插件已在Poseidon-Extra-Config.plist中注册
 @implementation H5AlisPlugin
-
++(void)load{
+    
+}
 - (NSString *)dicToJson:(NSDictionary *)dic{
     NSError *parseError = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
@@ -223,3 +225,5 @@
 }
 
 @end
+
+#endif

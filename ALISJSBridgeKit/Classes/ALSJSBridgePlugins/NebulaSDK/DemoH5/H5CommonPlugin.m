@@ -8,6 +8,8 @@
 
 #import "H5CommonPlugin.h"
 
+
+#ifdef ALS_HAS_NebulaSDK 
 // 该插件已在Poseidon-Extra-Config.plist中注册
 @implementation H5CommonPlugin
 
@@ -25,3 +27,5 @@
 }
 
 @end
+
+#endif

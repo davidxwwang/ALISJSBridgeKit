@@ -9,6 +9,8 @@
 #import "H5CommonPlugin+AddJSApi.h"
 #import <objc/runtime.h>
 
+#ifdef ALS_HAS_NebulaSDK
+
 @implementation H5CommonPlugin (AddJSApi)
 
 + (void)load{
@@ -53,3 +55,4 @@
 
 @end
 
+#endif

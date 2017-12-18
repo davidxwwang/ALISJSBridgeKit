@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ALISJSBridgeKit/ALISJSBridgeKit.h>
+#import "ALSJSBridgeBasePlugin.h"
 
 @interface AEHybridEngineManager : ALSJSBridgeBasePlugin
 @end

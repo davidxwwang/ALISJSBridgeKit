@@ -5,15 +5,18 @@
 //  Created by Glance on 16/12/14.
 //  Copyright © 2016年 Alipay. All rights reserved.
 //
-#import <NebulaSDK/NebulaSDK.h>
-#import <NebulaSDK/NBPluginBase.h>
-
+#import "NebulaSDKPluginHeader.h"
 #import "H5WebViewController.h"
+
+#ifdef ALS_HAS_NebulaSDK 
 
 @interface H5WebViewController ()<PSDPluginProtocol>
 
 @end
 
+#endif
+
+#ifdef ALS_HAS_NebulaSDK 
 @implementation H5WebViewController
 
 #pragma mark - UIViewController LifeCycle
@@ -127,5 +130,6 @@
     
 }
 
-
 @end
+
+#endif

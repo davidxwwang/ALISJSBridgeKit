@@ -1,1 +1,1 @@
-../../../../../ALISJSBridgeKit/Classes/JSModules/ALSJSBridgeModuleManager.h
+../../../../../ALISJSBridgeKit/Classes/ALSJSBridge/ALSJSBridgeModuleManager.h

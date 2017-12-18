@@ -1,6 +1,15 @@
 PODS:
   - AEHybridEngine (0.0.5)
-  - ALISJSBridgeKit (0.1.0)
+  - ALISJSBridgeKit (0.1.0):
+    - ALISJSBridgeKit/ALSJSBridge (= 0.1.0)
+    - ALISJSBridgeKit/ALSJSBridgeBase (= 0.1.0)
+    - ALISJSBridgeKit/ALSJSBridgePlugins (= 0.1.0)
+  - ALISJSBridgeKit/ALSJSBridge (0.1.0):
+    - ALISJSBridgeKit/ALSJSBridgeBase
+  - ALISJSBridgeKit/ALSJSBridgeBase (0.1.0)
+  - ALISJSBridgeKit/ALSJSBridgePlugins (0.1.0):
+    - AEHybridEngine
+    - ALISJSBridgeKit/ALSJSBridgeBase
   - APOpenSSL (1.0.0)
   - NebulaSDK (1.6.0.20171128)
 
@@ -23,7 +32,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AEHybridEngine: 0f9e578be414046956624211e6ce6e23616a8c55
-  ALISJSBridgeKit: 8e3dd8d7b9198318ef961b3b28a1b991d92f9ff6
+  ALISJSBridgeKit: 4ae783f5e8359508a2e038f695b990a222792461
   APOpenSSL: 0db1fa185e046356375045238aa5b01aedbc4f36
   NebulaSDK: b8cbe91f0e779c42ba179083828711fc8c8726ce
 

@@ -12,6 +12,8 @@
 #import "H5AlisPlugin.h"
 #import "H5CommonPlugin.h"
 
+#ifdef ALS_HAS_NebulaSDK 
+
 @interface NebulaSDKManager ()
 
 /**
@@ -23,10 +25,16 @@
 
 @end
 
+#endif
+
+#ifdef ALS_HAS_NebulaSDK 
+
 @implementation NebulaSDKManager {
 }
 
-JSSDKPLUGIN_EXPORT_MODULE();
+#if __has_include(<ALISJSBridgeKit/ALISJSBridgeKit.h>)
+    JSSDKPLUGIN_EXPORT_MODULE();
+#endif
 
 + (NebulaSDKManager *)sharedInstanse{
     static NebulaSDKManager *shared = nil;
@@ -144,5 +152,5 @@ JSSDKPLUGIN_EXPORT_MODULE();
 
 @end
 
-
+#endif
 
