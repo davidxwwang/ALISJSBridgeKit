@@ -1,6 +1,0 @@
-framework module Pods_ALISJSBridgeKit_Tests {
-  umbrella header "Pods-ALISJSBridgeKit_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

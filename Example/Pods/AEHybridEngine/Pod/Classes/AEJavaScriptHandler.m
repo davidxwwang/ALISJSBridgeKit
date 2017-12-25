@@ -17,7 +17,13 @@ static AEJavaScriptHandler *_rootJSHandler = nil;
     
 @property (nonatomic, assign) BOOL hasChanged;
 
+@property (nonatomic, strong) NSHashTable *performersTable;   //方法执行者，为类实例或者类。
+
 - (void)autoFullfill;
+
+- (void)addPerformerContext:(AEJSHandlerContext *)context;
+
+- (void)removePerformerContext:(AEJSHandlerContext *)context;
 
 @end
 
@@ -37,19 +43,6 @@ static AEJavaScriptHandler *_rootJSHandler = nil;
         [AEJavaScriptHandler_JSHandlerContainer addObject:self];
     }
     return self;
-}
-    
-- (instancetype)initWithPerformer:(id)performer {
-    self = [self init];
-    if (self) {
-        self.performer = performer;
-    }
-    return self;
-}
-    
-+ (instancetype)handlerWithPerformer:(id)performer {
-    AEJavaScriptHandler *handler = [[AEJavaScriptHandler alloc] initWithPerformer:performer];
-    return handler;
 }
 
 #pragma mark Setter & Getter
@@ -98,10 +91,35 @@ static AEJavaScriptHandler *_rootJSHandler = nil;
             [tempSet removeObject:cont];
         }
     }
+    
     return tempSet;
 }
 
+- (void)addPerformerContext:(AEJSHandlerContext *)context {
+    if (!context || ![context isKindOfClass:[AEJSHandlerPerformerContext class]] || !((AEJSHandlerPerformerContext *)context).performer) {
+        return;
+    }
+    if (!self.performersTable) {
+        self.performersTable = [NSHashTable weakObjectsHashTable];
+    }
+    AEJSHandlerPerformerContext *pContext = (AEJSHandlerPerformerContext *)context;
+    if (![self.performersTable containsObject:pContext.performer]) {
+        [self.performersTable addObject:pContext.performer];
+    }
+}
+
+- (void)removePerformerContext:(AEJSHandlerContext *)context {
+    if (!context || ![context isKindOfClass:[AEJSHandlerPerformerContext class]] || !((AEJSHandlerPerformerContext *)context).performer) {
+        return;
+    }
+    [self.performersTable removeObject:context];
+}
+
 #pragma mark Public methods
+
+- (NSArray *)performers {
+    return [self.performersTable allObjects];
+}
 
 - (BOOL)addJSContexts:(NSSet<AEJSHandlerContext *> *)contexts {
     if (![contexts isKindOfClass:[NSSet class]] || [contexts count] == 0) {
@@ -116,17 +134,23 @@ static AEJavaScriptHandler *_rootJSHandler = nil;
         }
         for (AEJSHandlerContext *cont in contexts) {
             if ([cont isValid]) {
-                BOOL existing = NO;
+                AEJSHandlerContext *existingContext = nil;
                 for (AEJSHandlerContext *selfContext in self.jsContexts) {
-                    if ([cont isEqualTo:selfContext]) {
-                        existing = YES;
+                    if ([cont isEqual:selfContext]) {
+                        existingContext = selfContext;
                     }
                 }
-                if (!existing) {
-                    //未找到相同的，则添加
-                    [tempSet addObject:cont];
-                    addCount ++;
+                if (existingContext) {
+                    //找到相同，则先删除原来的
+                    [self removePerformerContext:existingContext];
+                    [tempSet removeObject:existingContext];
                 }
+                //未找到相同的，则添加
+                [tempSet addObject:cont];
+                //添加performer
+                [self addPerformerContext:cont];
+                
+                addCount ++;
             }
         }
         
@@ -276,9 +300,10 @@ static AEJavaScriptHandler *_rootJSHandler = nil;
     }
 }
 
-- (BOOL)isEqualTo:(AEJSHandlerContext *)context {
+- (BOOL)isEqual:(id)object {
     BOOL isEq = NO;
-    if ([self.aliasName isEqualToString:context.aliasName]) {
+    if ([object isKindOfClass:[AEJSHandlerContext class]] &&
+        [self.aliasName isEqualToString:((AEJSHandlerContext *)object).aliasName]) {
         isEq = YES;
     }
     return isEq;
@@ -315,11 +340,9 @@ static AEJavaScriptHandler *_rootJSHandler = nil;
     return context;
 }
 
-- (BOOL)isEqualTo:(AEJSHandlerContext *)context {
+- (BOOL)isEqual:(id)object {
     BOOL isEq = NO;
-    if ([context isKindOfClass:[AEJSHandlerPerformerContext class]] && self.performer == ((AEJSHandlerPerformerContext *)context).performer &&
-        [NSStringFromSelector(self.selector) isEqualToString:NSStringFromSelector(((AEJSHandlerPerformerContext *)context).selector)] &&
-        [self.aliasName isEqualToString:((AEJSHandlerPerformerContext *)context).aliasName]) {
+    if ([object isKindOfClass:[AEJSHandlerPerformerContext class]] && [self.aliasName isEqualToString:((AEJSHandlerPerformerContext *)object).aliasName]) {
         isEq = YES;
     }
     return isEq;
@@ -357,9 +380,9 @@ static AEJavaScriptHandler *_rootJSHandler = nil;
     return context;
 }
 
-- (BOOL)isEqualTo:(AEJSHandlerContext *)context {
+- (BOOL)isEqual:(id)object {
     BOOL isEq = NO;
-    if ([context isKindOfClass:[AEJSHandlerBlockContext class]] && self.JSCallback == ((AEJSHandlerBlockContext *)context).JSCallback && [self.aliasName isEqualToString:((AEJSHandlerBlockContext *)context).aliasName]) {
+    if ([object isKindOfClass:[AEJSHandlerBlockContext class]] && [self.aliasName isEqualToString:((AEJSHandlerBlockContext *)object).aliasName]) {
         isEq = YES;
     }
     return isEq;

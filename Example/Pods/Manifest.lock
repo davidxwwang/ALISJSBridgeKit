@@ -1,13 +1,13 @@
 PODS:
-  - AEHybridEngine (0.0.5)
-  - ALISJSBridgeKit (0.1.0):
-    - ALISJSBridgeKit/ALSJSBridge (= 0.1.0)
-    - ALISJSBridgeKit/ALSJSBridgeBase (= 0.1.0)
-    - ALISJSBridgeKit/ALSJSBridgePlugins (= 0.1.0)
-  - ALISJSBridgeKit/ALSJSBridge (0.1.0):
+  - AEHybridEngine (0.0.6)
+  - ALISJSBridgeKit (0.1.2):
+    - ALISJSBridgeKit/ALSJSBridge (= 0.1.2)
+    - ALISJSBridgeKit/ALSJSBridgeBase (= 0.1.2)
+    - ALISJSBridgeKit/ALSJSBridgePlugins (= 0.1.2)
+  - ALISJSBridgeKit/ALSJSBridge (0.1.2):
     - ALISJSBridgeKit/ALSJSBridgeBase
-  - ALISJSBridgeKit/ALSJSBridgeBase (0.1.0)
-  - ALISJSBridgeKit/ALSJSBridgePlugins (0.1.0):
+  - ALISJSBridgeKit/ALSJSBridgeBase (0.1.2)
+  - ALISJSBridgeKit/ALSJSBridgePlugins (0.1.2):
     - AEHybridEngine
     - ALISJSBridgeKit/ALSJSBridgeBase
   - APOpenSSL (1.0.0)
@@ -27,12 +27,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   AEHybridEngine:
-    :commit: 14bdd5a89baadf3ba103fd71616612184710e52b
+    :commit: ce2c30e1ea1ffbc1842dc362af0ae14e6d0d6554
     :git: https://github.com/AltairEven/AEHybridEngine.git
 
 SPEC CHECKSUMS:
-  AEHybridEngine: 0f9e578be414046956624211e6ce6e23616a8c55
-  ALISJSBridgeKit: 4ae783f5e8359508a2e038f695b990a222792461
+  AEHybridEngine: 5bcae101bffe224cbc6e80bbc6514c97796c0345
+  ALISJSBridgeKit: b113fc0f0c1f8910df335d124f474e0916b11ae0
   APOpenSSL: 0db1fa185e046356375045238aa5b01aedbc4f36
   NebulaSDK: b8cbe91f0e779c42ba179083828711fc8c8726ce
 

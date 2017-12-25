@@ -277,9 +277,6 @@ static BOOL AEHrybridEngineHasLaunched = NO;
         return;
     }
     [handler removeJSContextsForPerformer:performer];
-    if (handler.performer == performer) {
-        handler.performer = nil;
-    }
 }
 
 @end

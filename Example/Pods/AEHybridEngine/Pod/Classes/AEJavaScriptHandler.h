@@ -24,12 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL autoFillable;    //是否支持自动添加JSContexts，默认YES
 
-@property (nonatomic, weak) id performer;   //指定的方法执行者，为类实例或者类。根据实际执行SEL的类型来赋值。必填
-    
-- (instancetype)initWithPerformer:(id)performer;
-    
-+ (instancetype)handlerWithPerformer:(id)performer;
-
 - (BOOL)addJSContexts:(NSSet<AEJSHandlerContext *> *)contexts;
 
 - (void)removeJSContextsForPerformer:(id)performer;
@@ -37,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeJSContextsWithSEL:(SEL)selector;
 
 - (void)removeJSContextsWithAliasName:(NSString *)name;
+
+- (NSArray *)performers;
 
 /**
  响应调用JSContext
@@ -74,10 +70,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  判断与指定JSContext是否一样
  
- @param context 指定JSContext
+ @param object 指定JSContext
  @return 是否一样
  */
-- (BOOL)isEqualTo:(AEJSHandlerContext *)context;
+- (BOOL)isEqual:(id)object;
 
 /**
  判断是否有效

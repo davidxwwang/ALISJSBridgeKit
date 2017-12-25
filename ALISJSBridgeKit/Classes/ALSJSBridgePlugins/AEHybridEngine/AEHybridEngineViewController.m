@@ -63,7 +63,7 @@
     }];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_currentUrl]]];
     NSLog(@"---%@",self.webView);
-    self.handler = [[AEJavaScriptHandler alloc] initWithPerformer:_manager];
+    self.handler = [AEJavaScriptHandler new];
     [self.webView setJavaScriptHandler:self.handler];
     if (_contexts) {
         [self.handler addJSContexts:_contexts];
